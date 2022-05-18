@@ -1,11 +1,18 @@
 if status is-interactive
     abbr -a sd pushd
     abbr -a pd popd
-
+	
+	# rust alt command
     alias cat="batcat"
 	alias ls="exa"
+	alias la="exa -a"
 
-	abbr -a gl git log --oneline --graph
+	# git
+	abbr -a gcmsg git commit -m 
+	abbr -a gaa git add .
+	abbr -a glg git log --oneline --graph
+	abbr -a grh git reset --soft HEAD^
+	abbr -a gdf git diff
 
     alias vim="nvim"
 	alias pbcopy="xclip -selection c"
