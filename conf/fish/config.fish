@@ -2,7 +2,6 @@ if status is-interactive
     alias sd="pushd"
     alias pd="popd"
     alias bat="batcat"
-    alias ls="exa"
     alias la="ls -a"
     alias vim="nvim"
 	alias rv="rmtar"
