@@ -10,6 +10,7 @@ if status is-interactive
 	alias python="python3.10"
 	alias pip="pip3.10"
 	alias open="explorer.exe"
+	abbr -a gl git log --oneline --graph
 
     set fish_cursor_default line
     set fish_cursor_insert line
