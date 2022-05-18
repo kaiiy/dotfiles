@@ -1,17 +1,19 @@
 if status is-interactive
-    alias sd="pushd"
-    alias pd="popd"
-    alias bat="batcat"
-    alias la="ls -a"
+    abbr -a sd pushd
+    abbr -a pd popd
+
+    alias cat="batcat"
+	alias ls="exa"
+
+	abbr -a gl git log --oneline --graph
+
     alias vim="nvim"
-	alias rv="rmtar"
 	alias pbcopy="xclip -selection c"
 	alias rm="trash-put"
 	alias python="python3.10"
 	alias pip="pip3.10"
 	alias open="explorer.exe"
-	abbr -a gl git log --oneline --graph
-
+	
     set fish_cursor_default line
     set fish_cursor_insert line
 

@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 
-fisher update
+update_fisher() {
+	fisher update
+}
+
+update_cargo() {
+	cargo install-update --all
+}
