@@ -3,9 +3,11 @@ if status is-interactive
     abbr -a pd popd
 	
 	# rust alt command
-    alias cat="batcat"
-	alias ls="exa"
-	alias la="exa -a"
+	abbr -a pcat cat
+    abbr -a cat bat 
+	abbr -a ls exa
+	abbr -a la exa -a
+	abbr -a ll exa -l
 
 	# git
 	abbr -a gcmsg git commit -m 
@@ -15,7 +17,7 @@ if status is-interactive
 	abbr -a gdf git diff
 
     alias vim="nvim"
-	alias pbcopy="xclip -selection c"
+	# alias pbcopy="xclip -selection c"
 	alias rm="trash-put"
 	alias python="python3.10"
 	alias pip="pip3.10"
