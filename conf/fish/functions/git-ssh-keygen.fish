@@ -28,5 +28,5 @@ function git-ssh-keygen
     echo -e $configs >>~/.ssh/config
 
     echo -e '\npublic key:'
-    /usr/bin/cat $public_key_path
+    eval (which cat) $public_key_path
 end
