@@ -52,6 +52,7 @@ let g:lightline = {
 let g:rainbow_active = 1 
 
 call plug#begin()
+Plug 'joshdick/onedark.vim', {'do': 'cp colors/onedark.vim ~/.config/nvim/colors/'}
 Plug 'itchyny/lightline.vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }

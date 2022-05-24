@@ -36,4 +36,11 @@ init_neovim() {
 	# todo: add package installtion feat  
 }
 
+init_nvim_onedark() {
+	mkdir -p $HOME/.config/nvim/colors/
+	curl -sSf  https://raw.githubusercontent.com/joshdick/onedark.vim/main/colors/onedark.vim -o $HOME/.config/nvim/colors/onedark.vim
 
+	mkdir -p $HOME/.config/nvim/autoload/lightline/
+	curl -sSf https://raw.githubusercontent.com/joshdick/onedark.vim/main/autoload/lightline/colorscheme/onedark.vim -o $HOME/.config/nvim/autoload/lightline/onedark.vim
+	curl -sSf https://raw.githubusercontent.com/joshdick/onedark.vim/main/autoload/onedark.vim -o $HOME/.config/nvim/autoload/onedark.vim
+}
