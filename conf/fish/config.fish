@@ -19,8 +19,6 @@ if status is-interactive
     alias vim="nvim"
 	# alias pbcopy="xclip -selection c"
 	alias rm="trash-put"
-	alias python="python3.10"
-	alias pip="pip3.10"
 	alias open="explorer.exe"
 	
     set fish_cursor_default line
