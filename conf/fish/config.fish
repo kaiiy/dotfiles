@@ -23,7 +23,6 @@ if status is-interactive
 	
     set fish_cursor_default line
     set fish_cursor_insert line
-
 	fish_add_path ~/.local/bin
 end
 
