@@ -8,6 +8,9 @@ init_rust() {
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	bash
 	cargo install cargo-update
+	cargo install exa
+	cargo install procs
+	cargo install bat
 }
 
 init_fish() {
