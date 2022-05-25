@@ -8,6 +8,7 @@ if status is-interactive
 	abbr -a ls exa
 	abbr -a la exa -a
 	abbr -a ll exa -l
+	abbr -a tree exa --tree
 
 	# git
 	abbr -a gcmsg git commit -m 
