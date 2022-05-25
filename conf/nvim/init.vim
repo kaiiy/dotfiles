@@ -1,3 +1,3 @@
-for f in glob('$HOME/.config/nvim/configs/*.vim', 0, 1)
-  execute 'source' f
+for conf_file in split(glob("~/.config/nvim/configs/*.vim")) 
+	execute 'source' conf_file
 endfor

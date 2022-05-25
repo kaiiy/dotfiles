@@ -31,6 +31,11 @@ set incsearch
 set smartcase
 set ignorecase
 
+set hidden
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
 set backspace=indent,eol,start
 
 nnoremap <ESC><ESC> :noh
@@ -41,18 +46,22 @@ inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap <silent> jj <ESC>
 
-set guicursor=
-
 syntax enable
 colorscheme onedark
 
 let g:lightline = {
-  \ 'colorscheme': 'onedark',
+	\ 'colorscheme': 'onedark',
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+    \       	  [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'cocstatus': 'coc#status'
+    \ },
   \ }
 let g:rainbow_active = 1 
 
 call plug#begin()
-Plug 'joshdick/onedark.vim', {'do': 'cp colors/onedark.vim ~/.config/nvim/colors/'}
 Plug 'itchyny/lightline.vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
