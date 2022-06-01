@@ -17,7 +17,7 @@ if status is-interactive
 	# git
 	abbr -a gcmsg git commit -m 
 	abbr -a gaa git add .
-	abbr -a glg git log --oneline --graph
+	abbr -a glg git log --oneline --graph --color=always
 	abbr -a grh git reset --soft HEAD^
 	abbr -a gdf git diff
 
