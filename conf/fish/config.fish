@@ -34,4 +34,3 @@ if status is-interactive
 end
 
 set -gx VOLTA_HOME "$HOME/.volta"
-
