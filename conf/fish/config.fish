@@ -12,6 +12,7 @@ if status is-interactive
 	abbr -a ll exa -l
 	abbr -a tree exa --tree
 	abbr -a ps procs
+	abbr -a grep rg
 
 	# git
 	abbr -a gcmsg git commit -m 

@@ -11,6 +11,7 @@ init_rust() {
 	cargo install exa
 	cargo install procs
 	cargo install bat
+	cargo install ripgrep
 }
 
 init_fish() {
