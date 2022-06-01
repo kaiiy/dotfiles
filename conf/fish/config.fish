@@ -1,4 +1,6 @@
 if status is-interactive
+	set -x LANG C.UTF-8
+
     abbr -a sd pushd
     abbr -a pd popd
 	
@@ -18,18 +20,18 @@ if status is-interactive
 	abbr -a grh git reset --soft HEAD^
 	abbr -a gdf git diff
 
-    alias vim="nvim"
+    abbr -a vim nvim
 	# alias pbcopy="xclip -selection c"
 	alias rm="trash-put"
 	alias open="explorer.exe"
 	
     set fish_cursor_default line
     set fish_cursor_insert line
-	fish_add_path ~/.local/bin
+	
+	fish_add_path $HOME/.cargo/bin
+	fish_add_path $HOME/.local/bin
+	fish_add_path $HOME/.volta/bin
 end
 
-set -x LANG C.UTF-8
 set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-set -gx PATH "$HOME/.cargo/bin" $PATH 
 
