@@ -1,6 +1,10 @@
 if status is-interactive
 	set -x LANG C.UTF-8
 
+	# apt
+	abbr -a ad sudo apt update
+	abbr -a ag sudo apt upgrade -y
+
     abbr -a sd pushd
     abbr -a pd popd
 	
