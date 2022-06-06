@@ -20,5 +20,6 @@ ln_dir $PWD/conf/fish/functions/ $HOME/.config/fish/functions/
 ln -sf $PWD/conf/lftp/lftprc $HOME/.lftprc
 
 # nvim 
+mkdir -p $HOME/.config/nvim/configs/
 ln -sf $PWD/conf/nvim/init.vim -t $HOME/.config/nvim/
 ln_dir $PWD/conf/nvim/configs/ $HOME/.config/nvim/configs/ 
