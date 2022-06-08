@@ -21,10 +21,9 @@ if status is-interactive
 	# git
 	abbr -a gc git commit -m 
 	abbr -a ga git add .
-	abbr -a glg git log --oneline --graph --color=always
-	abbr -a grh git reset --soft HEAD^
-	abbr -a gdf git diff
 	abbr -a gp git pull
+	abbr -a gu git push
+	abbr -a glg git log --oneline --graph --color=always
 
     abbr -a vim nvim
 	# alias pbcopy="xclip -selection c"
