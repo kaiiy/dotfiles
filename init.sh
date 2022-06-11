@@ -4,6 +4,12 @@ init_ubuntu() {
 	sudo apt-get install pkg-config
 }
 
+init_node() {
+	curl https://get.volta.sh | bash -s -- --skip-setup
+	volta install node
+	volta install yarn
+}
+
 init_rust() {
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	bash
