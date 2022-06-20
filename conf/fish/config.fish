@@ -23,7 +23,7 @@ if status is-interactive
 	abbr -a ga git add .
 	abbr -a gp git pull
 	abbr -a gu git push
-	abbr -a glg git log --oneline --graph --color=always
+	abbr -a gl git log --oneline --graph --color=always
 
     abbr -a vim nvim
 	# alias pbcopy="xclip -selection c"
