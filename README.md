@@ -5,3 +5,4 @@
 - volta (node, yarn, https://volta.sh)
 - neovim (editor, https://github.com/neovim/neovim)
 - lftp (ftp client like rsync, https://packages.ubuntu.com/jammy/lftp)
+- Zellij (terminal multiplexer, https://github.com/zellij-org/zellij)

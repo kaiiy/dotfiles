@@ -36,6 +36,7 @@ if status is-interactive
 	fish_add_path $HOME/.cargo/bin
 	fish_add_path $HOME/.local/bin
 	fish_add_path $HOME/.volta/bin
+	eval "$(zellij setup --generate-auto-start fish)"
 end
 
 set -gx VOLTA_HOME "$HOME/.volta"
