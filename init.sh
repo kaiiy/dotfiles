@@ -58,3 +58,7 @@ init_nvim_onedark() {
 	curl -sSf https://raw.githubusercontent.com/joshdick/onedark.vim/main/autoload/lightline/colorscheme/onedark.vim -o $HOME/.config/nvim/autoload/lightline/onedark.vim
 	curl -sSf https://raw.githubusercontent.com/joshdick/onedark.vim/main/autoload/onedark.vim -o $HOME/.config/nvim/autoload/onedark.vim
 }
+
+init_zellij() {
+	cargo install zellij
+}
