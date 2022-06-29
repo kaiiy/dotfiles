@@ -23,3 +23,7 @@ ln -sf $PWD/conf/lftp/lftprc $HOME/.lftprc
 mkdir -p $HOME/.config/nvim/configs/
 ln -sf $PWD/conf/nvim/init.vim -t $HOME/.config/nvim/
 ln_dir $PWD/conf/nvim/configs/ $HOME/.config/nvim/configs/ 
+
+# zellij
+mkdir -p $HOME/.config/zellij/
+ln -sf $PWD/conf/zellij/config.yaml -t $HOME/.config/zellij/
