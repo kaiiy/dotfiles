@@ -484,6 +484,7 @@ plugins:
     - path: compact-bar
       tag: compact-bar
 
+default_layout: compact
 pane_frames: false
 theme: one-half-dark
 themes:
