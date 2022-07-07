@@ -1,6 +1,6 @@
 function git-ssh-keygen
     set repository_name $argv[1]
-    set repository_dir (string join '' ~/.ssh/github/ $repository_name)
+    set repository_dir (string join '' $HOME/.ssh/github/ $repository_name)
     set ssh_filename id_ed25519
     set private_key_path (string join '' $repository_dir / $ssh_filename)
     set public_key_path (string join '' $private_key_path .pub)
