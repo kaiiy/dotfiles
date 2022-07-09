@@ -47,10 +47,10 @@ inoremap ( ()<LEFT>
 inoremap <silent> jj <ESC>
 
 syntax enable
-colorscheme onedark
+colorscheme tokyonight
 
 let g:lightline = {
-	\ 'colorscheme': 'onedark',
+	\ 'colorscheme': 'tokyonight',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
     \       	  [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
@@ -72,6 +72,7 @@ Plug 'mechatroner/rainbow_csv'
 Plug 'luochen1990/rainbow'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dag/vim-fish'
+Plug 'ghifarit53/tokyonight-vim', {'do': 'cp colors/* ~/.config/nvim/colors/'}
 call plug#end()
 
 filetype plugin indent on
