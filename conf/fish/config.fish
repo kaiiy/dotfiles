@@ -8,7 +8,7 @@ if status is-interactive
     abbr -a sd pushd
     abbr -a pd popd
 
-	abbr -a du du -sh
+    abbr -a du du -sh
 
     # rust alt command
     abbr -a pcat cat
