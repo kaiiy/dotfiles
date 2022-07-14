@@ -5,9 +5,9 @@ if status is-interactive
     abbr -a ad sudo apt update
     abbr -a ag sudo apt upgrade -y
 
+    # standard command
     abbr -a sd pushd
     abbr -a pd popd
-
     abbr -a du du -sh
 
     # rust alt command
@@ -32,12 +32,14 @@ if status is-interactive
     alias rm="trash-put"
     alias open="explorer.exe"
 
-    set fish_cursor_default line
-    set fish_cursor_insert line
+    # set fish_cursor_default line
+    # set fish_cursor_insert line
 
+    # path 
     fish_add_path $HOME/.cargo/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/.volta/bin
+
     eval "$(zellij setup --generate-auto-start fish)"
 end
 
