@@ -20,6 +20,9 @@ if status is-interactive
     abbr -a ps procs
     abbr -a grep rg
 
+	# z 
+	alias z="z-wrapper"
+
     # git
     abbr -a gc git commit -m
     abbr -a ga git add .
