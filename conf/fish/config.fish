@@ -19,6 +19,7 @@ if status is-interactive
     abbr -a tree exa --tree
     abbr -a ps procs
     abbr -a grep rg
+	abbr -a find fd
 
 	# z 
 	alias z="z-wrapper"
