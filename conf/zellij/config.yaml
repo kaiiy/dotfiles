@@ -28,9 +28,9 @@ keybinds:
         - action: [NewPane: ]
           key: [ Alt: 'n',]
         - action: [MoveFocusOrTab: Left,]
-          key: [ Alt: 'h', Alt: Left]
+          key: [ Ctrl: 'z']
         - action: [MoveFocusOrTab: Right,]
-          key: [ Alt: 'l', Alt: Right ]
+          key: [ Ctrl: 'x' ]
         - action: [MoveFocus: Down,]
           key: [ Alt: 'j', Alt: Down]
         - action: [MoveFocus: Up,]
@@ -486,6 +486,8 @@ plugins:
 
 default_layout: compact
 pane_frames: false
+mouse_mode: false
+
 theme: one-half-dark
 themes:
   one-half-dark:
@@ -500,4 +502,3 @@ themes:
     cyan: [86, 182, 194]
     black: [27, 29, 35]
     white: [233, 225, 254]
-mouse_mode: false

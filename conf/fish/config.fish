@@ -11,18 +11,18 @@ if status is-interactive
     abbr -a du du -sh
 
     # rust alt command
-    abbr -a pcat cat
     abbr -a cat bat
     abbr -a ls exa
     abbr -a la exa -a
     abbr -a ll exa -l
+    abbr -a lla exa -la
     abbr -a tree exa --tree
     abbr -a ps procs
     abbr -a grep rg
-	abbr -a find fd
+    abbr -a find fd
 
-	# z 
-	alias z="z-wrapper"
+    # z 
+    alias z="z-wrapper"
 
     # git
     abbr -a gc git commit -m

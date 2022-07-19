@@ -16,8 +16,6 @@ init_rust() {
 }
 
 init_fish() {
-	echo Start fish shell installation!
-	
 	sudo apt-add-repository ppa:fish-shell/release-3
 	sudo apt-get update
 	sudo apt-get upgrade -y
