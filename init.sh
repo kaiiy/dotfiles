@@ -12,12 +12,7 @@ init_node() {
 
 init_rust() {
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-	bash
-	cargo install cargo-update
-	cargo install exa
-	cargo install procs
-	cargo install bat
-	cargo install ripgrep
+	cargo install bat cargo-update exa fd-find procs ripgrep topgrade zellij
 }
 
 init_fish() {
@@ -37,8 +32,6 @@ init_fish() {
 }
 
 init_neovim() {
-	echo Start neovim installation!
-
 	sudo add-apt-repository ppa:neovim-ppa/stable
 	sudo apt-get update
 	sudo apt-get upgrade -y
@@ -48,15 +41,6 @@ init_neovim() {
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 	# todo: add package installtion feat  
-}
-
-init_nvim_onedark() {
-	mkdir -p $HOME/.config/nvim/colors/
-	curl -sSf  https://raw.githubusercontent.com/joshdick/onedark.vim/main/colors/onedark.vim -o $HOME/.config/nvim/colors/onedark.vim
-
-	mkdir -p $HOME/.config/nvim/autoload/lightline/
-	curl -sSf https://raw.githubusercontent.com/joshdick/onedark.vim/main/autoload/lightline/colorscheme/onedark.vim -o $HOME/.config/nvim/autoload/lightline/onedark.vim
-	curl -sSf https://raw.githubusercontent.com/joshdick/onedark.vim/main/autoload/onedark.vim -o $HOME/.config/nvim/autoload/onedark.vim
 }
 
 init_zellij() {
