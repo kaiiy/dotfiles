@@ -10,11 +10,13 @@ PWD=$(pwd)
 ln -sf $PWD/conf/bash/bashrc $HOME/.bashrc 
 
 # fish
-ln -sf $PWD/conf/fish/config.fish -t $HOME/.config/fish/
-unlink $HOME/.config/fish/fish_plugins > /dev/null 2>&1
-cp -f $PWD/conf/fish/fish_plugins $HOME/.config/fish/
-ln -sf $PWD/conf/fish/conf.d/color_scheme.fish -t $HOME/.config/fish/conf.d/
-ln_dir $PWD/conf/fish/functions/ $HOME/.config/fish/functions/ 
+FISH_SRC_HOME=$PWD/conf/fish
+FISH_DIST_HOME=$HOME/.config/fish
+
+ln -sf $FISH_SRC_HOME/config.fish -t $FISH_DIST_HOME/
+cp -f $FISH_SRC_HOME/fish_plugins $FISH_DIST_HOME/
+ln_dir $FISH_SRC_HOME/conf.d/color_scheme.fish $FISH_DIST_HOME/conf.d/
+ln_dir $FISH_SRC_HOME/functions/ $FISH_DIST_HOME/functions/ 
 
 # lftp 
 ln -sf $PWD/conf/lftp/lftprc $HOME/.lftprc
