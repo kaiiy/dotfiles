@@ -12,7 +12,7 @@ init_node() {
 
 init_rust() {
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-	cargo install bat cargo-update exa fd-find procs ripgrep topgrade zellij
+	cargo install bat cargo-update exa fd-find procs ripgrep topgrade zellij deno
 }
 
 init_fish() {
