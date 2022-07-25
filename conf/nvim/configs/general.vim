@@ -69,7 +69,11 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'mechatroner/rainbow_csv'
 Plug 'luochen1990/rainbow'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+# theme
 Plug 'ghifarit53/tokyonight-vim', {'do': 'cp colors/* ~/.config/nvim/colors/'}
+# filer
+Plug 'vim-denops/denops.vim'
+Plug 'Shougo/ddu.vim'
 call plug#end()
 
 filetype plugin indent on
