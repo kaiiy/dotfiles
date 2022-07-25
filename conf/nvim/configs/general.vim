@@ -60,18 +60,15 @@ let g:lightline = {
     \ },
   \ }
 let g:rainbow_active = 1 
+let g:cursorhold_updatetime = 100
 
 call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-icons'
 Plug 'ryanoasis/vim-devicons'
-Plug 'kristijanhusak/defx-git'
 Plug 'mechatroner/rainbow_csv'
 Plug 'luochen1990/rainbow'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dag/vim-fish'
 Plug 'ghifarit53/tokyonight-vim', {'do': 'cp colors/* ~/.config/nvim/colors/'}
 call plug#end()
 
