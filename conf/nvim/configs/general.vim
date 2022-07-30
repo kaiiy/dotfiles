@@ -72,6 +72,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ghifarit53/tokyonight-vim', {'do': 'cp colors/* ~/.config/nvim/colors/'}
 Plug 'vim-denops/denops.vim'
 Plug 'Shougo/ddu.vim'
+Plug 'dag/vim-fish'
 call plug#end()
 
 filetype plugin indent on
