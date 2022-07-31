@@ -1,6 +1,4 @@
-# dotfiles
-
-## OS 
+# dotfiles 
 
 - Ubuntu 22.04
 
