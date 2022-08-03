@@ -37,6 +37,7 @@ set updatetime=300
 set shortmess+=c
 set signcolumn=yes
 set backspace=indent,eol,start
+set completeopt=menuone,noinsert
 
 nnoremap <ESC><ESC> :noh
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
@@ -45,6 +46,8 @@ inoremap { {}<LEFT>
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap <silent> jj <ESC>
+inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
+inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 
 syntax enable
 colorscheme tokyonight
