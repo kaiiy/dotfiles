@@ -5,13 +5,15 @@ ln_dir () {
 }
 
 PWD=$(pwd)
+SRC_HOME=$PWD/conf
+DIST_HOME=$HOME/.config
 
 # bash
-ln -sf $PWD/conf/bash/bashrc $HOME/.bashrc 
+ln -sf $SRC_HOME/bash/bashrc $HOME/.bashrc 
 
 # fish
-FISH_SRC_HOME=$PWD/conf/fish
-FISH_DIST_HOME=$HOME/.config/fish
+FISH_SRC_HOME=$SRC_HOME/fish
+FISH_DIST_HOME=$DIST_HOME/fish
 
 ln -sf $FISH_SRC_HOME/config.fish -t $FISH_DIST_HOME/
 cp -f $FISH_SRC_HOME/fish_plugins $FISH_DIST_HOME/
@@ -19,13 +21,19 @@ ln_dir $FISH_SRC_HOME/conf.d/color_scheme.fish $FISH_DIST_HOME/conf.d/
 ln_dir $FISH_SRC_HOME/functions/ $FISH_DIST_HOME/functions/ 
 
 # lftp 
-ln -sf $PWD/conf/lftp/lftprc $HOME/.lftprc
+ln -sf $SRC_HOME/lftp/lftprc $HOME/.lftprc
 
 # nvim 
-mkdir -p $HOME/.config/nvim/configs/
-ln -sf $PWD/conf/nvim/init.vim -t $HOME/.config/nvim/
-ln_dir $PWD/conf/nvim/configs/ $HOME/.config/nvim/configs/ 
+NVIM_SRC_HOME=$SRC_HOME/nvim
+NVIM_DIST_HOME=$DIST_HOME/nvim
+
+mkdir -p $NVIM_DIST_HOME/configs/
+ln -sf $NVIM_SRC_HOME/init.vim -t $NVIM_DIST_HOME/
+ln_dir $NVIM_SRC_HOME/configs/ $NVIM_DIST_HOME/configs/ 
 
 # zellij
-mkdir -p $HOME/.config/zellij/
-ln -sf $PWD/conf/zellij/config.yaml -t $HOME/.config/zellij/
+ZELLIJ_SRC_HOME=$SRC_HOME/zellij
+ZELLIJ_DIST_HOME=$DIST_HOME/zellij
+
+mkdir -p $ZELLIJ_DIST_HOME/
+ln -sf $ZELLIJ_SRC_HOME/config.yaml -t $ZELLIJ_DIST_HOME/
