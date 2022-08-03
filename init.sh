@@ -41,6 +41,3 @@ init_neovim() {
 	# todo: add package installtion feat  
 }
 
-init_zellij() {
-	cargo install zellij
-}
