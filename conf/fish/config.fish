@@ -33,7 +33,7 @@ if status is-interactive
 
     abbr -a vim nvim
     # alias pbcopy="xclip -selection c"
-    alias rm="trash-put"
+    abbr -a rm trash-put
     alias open="explorer.exe"
 
     # set fish_cursor_default line
