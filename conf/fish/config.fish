@@ -44,6 +44,7 @@ if status is-interactive
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/.volta/bin
 	fish_add_path $HOME/.nimble/bin
+	fish_add_path /home/linuxbrew/.linuxbrew/bin
 
     eval "$(zellij setup --generate-auto-start fish)"
 end
