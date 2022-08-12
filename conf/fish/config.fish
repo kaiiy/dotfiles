@@ -35,6 +35,7 @@ if status is-interactive
     # alias pbcopy="xclip -selection c"
     abbr -a rm trash-put
     alias open="explorer.exe"
+	abbr -a dc docker compose
 
     # set fish_cursor_default line
     # set fish_cursor_insert line
