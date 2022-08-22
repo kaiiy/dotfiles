@@ -37,6 +37,10 @@ if status is-interactive
     alias open="explorer.exe"
 	abbr -a dc docker compose
 
+	# node.js
+	abbr -a pn pnpm
+	abbr -a px pnpx
+	
     # set fish_cursor_default line
     # set fish_cursor_insert line
 

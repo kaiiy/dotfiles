@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 init_ubuntu() {
-	sudo apt-get install pkg-config curl build-essential gcc make -y
+	sudo apt-get install pkg-config curl build-essential gcc make libssl-dev -y
 }
 
 init_fish() {
