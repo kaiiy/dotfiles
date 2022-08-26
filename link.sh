@@ -31,6 +31,11 @@ mkdir -p $NVIM_DIST_HOME/configs/
 ln -sf $NVIM_SRC_HOME/init.vim -t $NVIM_DIST_HOME/
 ln_dir $NVIM_SRC_HOME/configs/ $NVIM_DIST_HOME/configs/ 
 
+# topgrade
+TOPGRADE_SRC=$SRC_HOME/topgrade
+TOPGRADE_DIST=$DIST_HOME
+ln -sf $TOPGRADE_SRC/topgrade.toml $TOPGRADE_DIST
+
 # zellij
 ZELLIJ_SRC_HOME=$SRC_HOME/zellij
 ZELLIJ_DIST_HOME=$DIST_HOME/zellij
