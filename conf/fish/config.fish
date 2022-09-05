@@ -22,7 +22,7 @@ if status is-interactive
     abbr -a find fd
 
     # z 
-	#    alias z="z-wrapper"
+    alias z="z-wrapper"
 
     # git
     abbr -a gc git commit -m
