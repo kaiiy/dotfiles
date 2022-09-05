@@ -26,7 +26,7 @@ init_node() {
 init_rust() {
 	curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
 	fish
-	cargo install bat cargo-update exa fd-find procs ripgrep topgrade zellij deno
+	cargo install bat cargo-update exa fd-find procs ripgrep topgrade zellij
 }
 
 init_neovim() {
@@ -41,3 +41,7 @@ init_neovim() {
 	# todo: add package installtion feat  
 }
 
+init_brew() {
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	brew install deno
+}
