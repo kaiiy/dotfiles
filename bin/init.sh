@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-init_ubuntu() {
-	sudo apt-get install pkg-config curl build-essential gcc make libssl-dev -y
-}
-
 init_fish() {
 	sudo apt-add-repository ppa:fish-shell/release-3
 	sudo apt-get update
@@ -17,17 +13,6 @@ init_fish() {
 		| source && fisher install jorgebucaran/fisher
 }
 
-init_node() {
-	curl https://get.volta.sh | bash -s -- --skip-setup
-	volta install node
-	volta install yarn
-}
-
-init_rust() {
-	curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
-	fish
-	cargo install cargo-update exa fd-find procs ripgrep topgrade
-}
 
 init_neovim() {
 	sudo add-apt-repository ppa:neovim-ppa/stable
@@ -43,5 +28,7 @@ init_neovim() {
 
 init_brew() {
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-	brew install deno zellij bat
+	
+	brew tap tgotwig/linux-dust
+	brew install deno zellij bat dust
 }
