@@ -41,5 +41,12 @@ brew:
     tap: 
       - tgotwig/linux-dust
   
-rust:
+cargo:
   init: curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
+  app:
+    - cargo-update
+  command: 
+    main: "cargo"
+    install: "install"
+    uninstall: "uninstall"
+
