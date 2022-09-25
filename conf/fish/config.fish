@@ -20,6 +20,7 @@ if status is-interactive
     abbr -a ps procs
     abbr -a grep rg
     abbr -a find fd
+	abbr -a pcat /usr/bin/cat
 
     # z 
     alias z="z-wrapper"
@@ -32,7 +33,6 @@ if status is-interactive
     abbr -a gl git log --oneline --graph --color=always
 
     abbr -a vim nvim
-    # alias pbcopy="xclip -selection c"
     abbr -a rm trash-put
     alias open="explorer.exe"
 	abbr -a dc docker compose
