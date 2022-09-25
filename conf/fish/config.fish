@@ -47,7 +47,10 @@ if status is-interactive
 	abbr -a poe poetry
 
     # set fish_cursor_default line
-    # set fish_cursor_insert line
+	# set fish_cursor_insert line
+	
+	# wsl2
+	alias clip="clip.exe"
 
     # path 
     fish_add_path $HOME/.cargo/bin
