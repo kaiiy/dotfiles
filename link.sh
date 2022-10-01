@@ -24,8 +24,9 @@ ln_dir $FISH_SRC_HOME/functions/ $FISH_DIST_HOME/functions/
 ln -sf $SRC_HOME/lftp/lftprc $HOME/.lftprc
 
 # nvim 
-NVIM_SRC_HOME=$SRC_HOME/nvim
-NVIM_DIST_HOME=$DIST_HOME/nvim
+# migrating to AstroNvim (https://github.com/AstroNvim/AstroNvim)
+# NVIM_SRC_HOME=$SRC_HOME/nvim
+# NVIM_DIST_HOME=$DIST_HOME/nvim
 
 mkdir -p $NVIM_DIST_HOME/configs/
 ln -sf $NVIM_SRC_HOME/init.vim -t $NVIM_DIST_HOME/
