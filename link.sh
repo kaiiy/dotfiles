@@ -28,9 +28,9 @@ ln -sf $SRC_HOME/lftp/lftprc $HOME/.lftprc
 # NVIM_SRC_HOME=$SRC_HOME/nvim
 # NVIM_DIST_HOME=$DIST_HOME/nvim
 
-mkdir -p $NVIM_DIST_HOME/configs/
-ln -sf $NVIM_SRC_HOME/init.vim -t $NVIM_DIST_HOME/
-ln_dir $NVIM_SRC_HOME/configs/ $NVIM_DIST_HOME/configs/ 
+# mkdir -p $NVIM_DIST_HOME/configs/
+# ln -sf $NVIM_SRC_HOME/init.vim -t $NVIM_DIST_HOME/
+# ln_dir $NVIM_SRC_HOME/configs/ $NVIM_DIST_HOME/configs/ 
 
 # topgrade
 TOPGRADE_SRC=$SRC_HOME/topgrade
@@ -43,3 +43,9 @@ ZELLIJ_DIST_HOME=$DIST_HOME/zellij
 
 mkdir -p $ZELLIJ_DIST_HOME/
 ln -sf $ZELLIJ_SRC_HOME/config.yaml -t $ZELLIJ_DIST_HOME/
+
+# task
+if [ ! -f ~/.config/fish/completions/task.fish ]; then
+    wget https://raw.githubusercontent.com/go-task/task/master/completion/fish/task.fish \
+        -O ~/.config/fish/completions/task.fish -q
+fi
