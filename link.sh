@@ -49,3 +49,8 @@ if [ ! -f ~/.config/fish/completions/task.fish ]; then
     wget https://raw.githubusercontent.com/go-task/task/master/completion/fish/task.fish \
         -O ~/.config/fish/completions/task.fish -q
 fi
+
+# bat
+BAT_SRC=$SRC_HOME/bat
+BAT_DEST=$DIST_HOME/bat
+ln -sf $BAT_SRC/config -t $BAT_DEST

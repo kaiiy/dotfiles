@@ -14,6 +14,7 @@
 - [lftp](https://packages.ubuntu.com/jammy/lftp)
 - [Zellij](https://github.com/zellij-org/zellij)
 - [Task](https://taskfile.dev)
+- bat
 
 ## Update
 
