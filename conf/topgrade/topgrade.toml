@@ -1,8 +1,8 @@
 # Don't ask for confirmations
-assume_yes = true	
+assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["containers", "composer", "node", "choosenim", "stack"]
+disable = ["containers", "composer", "node", "choosenim", "stack", "Neovim"]
 
 # Ignore failures for these steps
 ignore_failures = ["cargo"]
