@@ -53,4 +53,5 @@ fi
 # bat
 BAT_SRC=$SRC_HOME/bat
 BAT_DEST=$DIST_HOME/bat
+mkdir -p $BAT_DEST/
 ln -sf $BAT_SRC/config -t $BAT_DEST
