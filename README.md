@@ -3,7 +3,7 @@
 ## Requirements
 
 - Ubuntu 22.04
-- Neovim ~0.7.0
+- Neovim ~0.8.0
 
 ## Features
 
@@ -14,7 +14,7 @@
 - [lftp](https://packages.ubuntu.com/jammy/lftp)
 - [Zellij](https://github.com/zellij-org/zellij)
 - [Task](https://taskfile.dev)
-- bat
+- [bat](https://github.com/sharkdp/bat)
 
 ## Update
 
