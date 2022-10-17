@@ -3,6 +3,9 @@
 ln_dir () {
     find $1 -maxdepth 1 -type f -print | xargs ln -sf -t $2
 }
+cp_link () {
+    find $1 -maxdepth 1 -type l -print | xargs -i cp -f {} $2 
+}
 
 PWD=$(pwd)
 SRC_HOME=$PWD/conf
@@ -44,11 +47,6 @@ ZELLIJ_DEST_HOME=$DEST_HOME/zellij
 mkdir -p $ZELLIJ_DEST_HOME/
 ln -sf $ZELLIJ_SRC_HOME/config.yaml -t $ZELLIJ_DEST_HOME/
 
-# task
-if [ ! -f ~/.config/fish/completions/task.fish ]; then
-    wget https://raw.githubusercontent.com/go-task/task/master/completion/fish/task.fish \
-        -O ~/.config/fish/completions/task.fish -q
-fi
 
 # bat
 BAT_SRC=$SRC_HOME/bat
@@ -56,3 +54,5 @@ BAT_DEST=$DEST_HOME/bat
 
 mkdir -p $BAT_DEST/
 ln -sf $BAT_SRC/config -t $BAT_DEST
+
+cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ ~/.config/fish/completions/
