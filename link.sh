@@ -22,6 +22,7 @@ ln -sf $FISH_SRC_HOME/config.fish -t $FISH_DEST_HOME/
 cp -f $FISH_SRC_HOME/fish_plugins $FISH_DEST_HOME/
 ln_dir $FISH_SRC_HOME/conf.d/color_scheme.fish $FISH_DEST_HOME/conf.d/
 ln_dir $FISH_SRC_HOME/functions/ $FISH_DEST_HOME/functions/ 
+cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ ~/.config/fish/completions/
 
 # lftp 
 ln -sf $SRC_HOME/lftp/lftprc $HOME/.lftprc
@@ -55,4 +56,3 @@ BAT_DEST=$DEST_HOME/bat
 mkdir -p $BAT_DEST/
 ln -sf $BAT_SRC/config -t $BAT_DEST
 
-cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ ~/.config/fish/completions/
