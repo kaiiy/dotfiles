@@ -21,6 +21,7 @@ if status is-interactive
     abbr -a grep rg
     abbr -a find fd
 	abbr -a pcat /usr/bin/cat
+    abbr -a ks z -c
 
     # z 
     alias z="z-wrapper"
