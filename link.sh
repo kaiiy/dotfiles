@@ -8,7 +8,7 @@ cp_link () {
 }
 
 PWD=$(pwd)
-SRC_HOME=$PWD/conf
+SRC_HOME=$PWD/etc
 DEST_HOME=$HOME/.config
 
 # bash
