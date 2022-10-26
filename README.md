@@ -15,6 +15,7 @@
 - [Zellij](https://github.com/zellij-org/zellij)
 - [Task](https://taskfile.dev)
 - [bat](https://github.com/sharkdp/bat)
+- [topgrade](https://github.com/topgrade-rs/topgrade)
 
 ## Update
 
