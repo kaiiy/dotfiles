@@ -46,7 +46,7 @@ ZELLIJ_SRC_HOME=$SRC_HOME/zellij
 ZELLIJ_DEST_HOME=$DEST_HOME/zellij
 
 mkdir -p $ZELLIJ_DEST_HOME/
-ln -sf $ZELLIJ_SRC_HOME/config.yaml -t $ZELLIJ_DEST_HOME/
+ln -sf $ZELLIJ_SRC_HOME/config.kdl -t $ZELLIJ_DEST_HOME/
 
 
 # bat
