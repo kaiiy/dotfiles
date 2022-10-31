@@ -2,6 +2,7 @@
 
 ## Requirements
 
+- WSL2
 - Ubuntu 22.04
 - Neovim ~0.8.0
 
@@ -16,6 +17,7 @@
 - [Task](https://taskfile.dev)
 - [bat](https://github.com/sharkdp/bat)
 - [topgrade](https://github.com/topgrade-rs/topgrade)
+- [Inkscape](https://inkscape.org)
 
 ## Update
 
