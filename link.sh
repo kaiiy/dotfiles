@@ -59,5 +59,5 @@ ln -sf $BAT_SRC/config -t $BAT_DEST
 # inkscape
 INKSCAPE_SRC=$SRC_HOME/inkscape
 INKSCAPE_DEST=$DEST_HOME/inkscape
-
+mkdir -p $DEST_HOME/inkscape/
 ln -sf $INKSCAPE_SRC/preferences.xml -t $INKSCAPE_DEST
