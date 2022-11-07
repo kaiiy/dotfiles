@@ -61,6 +61,9 @@ if status is-interactive
 	fish_add_path /home/linuxbrew/.linuxbrew/bin
 	fish_add_path $HOME/go/bin
 
+    # env 
+    set -x DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
+
     eval "$(zellij setup --generate-auto-start fish)"
 end
 
