@@ -2,10 +2,10 @@
 assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["containers", "composer", "node", "choosenim", "stack", "vim"]
+disable = ["containers", "composer", "node", "choosenim", "stack", "vim", "cargo"]
 
 # Ignore failures for these steps
-ignore_failures = ["cargo"]
+# ignore_failures = [] 
 
 # Run specific steps - same options as the command line flag
 #only = ["system", "emacs"]
