@@ -11,7 +11,7 @@ if status is-interactive
     abbr -a du du -sh
 
     # rust alt command
-    abbr -a cat bat
+    # abbr -a cat bat
     abbr -a ls exa
     abbr -a la exa -a
     abbr -a ll exa -l
