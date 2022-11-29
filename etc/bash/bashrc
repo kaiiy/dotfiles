@@ -1,3 +1,2 @@
-sudo service docker start
 exec fish
 
