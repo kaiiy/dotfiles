@@ -20,8 +20,7 @@ if status is-interactive
     abbr -a ps procs
     abbr -a grep rg
     abbr -a find fd
-	abbr -a pcat /usr/bin/cat
-    abbr -a ks z -c
+    abbr -a pcat /usr/bin/cat
 
     # z 
     alias z="z-wrapper"
@@ -36,31 +35,31 @@ if status is-interactive
     abbr -a vim nvim
     abbr -a rm trash-put
     alias open="explorer.exe"
-	abbr -a dc docker compose
+    abbr -a dc docker compose
 
-	# node.js
-	abbr -a pn pnpm
-	abbr -a px pnpx
-	
-	# python 
-	# alias python3="/home/linuxbrew/.linuxbrew/bin/python3.10"
-	# alias pip3="/home/linuxbrew/.linuxbrew/bin/pip3.10"
-	abbr -a poe poetry
+    # node.js
+    abbr -a pn pnpm
+    abbr -a px pnpx
+    
+    # python 
+    # alias python3="/home/linuxbrew/.linuxbrew/bin/python3.10"
+    # alias pip3="/home/linuxbrew/.linuxbrew/bin/pip3.10"
+    abbr -a poe poetry
     abbr -a python python3
 
     # set fish_cursor_default line
-	# set fish_cursor_insert line
-	
-	# wsl2
-	alias clip="clip.exe"
+    # set fish_cursor_insert line
+    
+    # wsl2
+    alias clip="clip.exe"
 
     # path 
     fish_add_path $HOME/.cargo/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/.volta/bin
-	fish_add_path $HOME/.nimble/bin
-	fish_add_path /home/linuxbrew/.linuxbrew/bin
-	fish_add_path $HOME/go/bin
+    fish_add_path $HOME/.nimble/bin
+    fish_add_path /home/linuxbrew/.linuxbrew/bin
+    fish_add_path $HOME/go/bin
 
     # env 
     # set -x DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
