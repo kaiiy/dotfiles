@@ -46,6 +46,7 @@ if status is-interactive
 	# alias python3="/home/linuxbrew/.linuxbrew/bin/python3.10"
 	# alias pip3="/home/linuxbrew/.linuxbrew/bin/pip3.10"
 	abbr -a poe poetry
+    abbr -a python python3
 
     # set fish_cursor_default line
 	# set fish_cursor_insert line
