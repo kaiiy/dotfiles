@@ -10,6 +10,9 @@ if status is-interactive
     abbr -a pd popd
     abbr -a du du -sh
 
+    # search my global ip
+    abbr -a ip:g curl inet-ip.info
+
     # less
     set -x LESS '-g -i -M -R -S -z-4 -x4'
     set -x PAGER less
