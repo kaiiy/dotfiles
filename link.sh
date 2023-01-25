@@ -18,6 +18,10 @@ ln -sf $SRC_HOME/bash/bashrc $HOME/.bashrc
 FISH_SRC_HOME=$SRC_HOME/fish
 FISH_DEST_HOME=$DEST_HOME/fish
 
+mkdir -p $FISH_DEST_HOME/conf.d/
+mkdir -p $FISH_DEST_HOME/functions/
+mkdir -p $FISH_DEST_HOME/completions/
+
 ln -sf $FISH_SRC_HOME/config.fish -t $FISH_DEST_HOME/
 cp -f $FISH_SRC_HOME/fish_plugins $FISH_DEST_HOME/
 ln_dir $FISH_SRC_HOME/conf.d/color_scheme.fish $FISH_DEST_HOME/conf.d/
