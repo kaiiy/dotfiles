@@ -18,6 +18,8 @@
 - [bat](https://github.com/sharkdp/bat)
 - [topgrade](https://github.com/topgrade-rs/topgrade)
 - [Inkscape](https://inkscape.org)
+- [exa](https://github.com/ogham/exa)
+- [Hyper](https://github.com/vercel/hyper)
 
 ## Update
 
