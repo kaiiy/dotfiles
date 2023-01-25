@@ -65,3 +65,8 @@ ln -sf $BAT_SRC/config -t $BAT_DEST
 # INKSCAPE_DEST=$DEST_HOME/inkscape
 # mkdir -p $DEST_HOME/inkscape/
 # ln -sf $INKSCAPE_SRC/preferences.xml -t $INKSCAPE_DEST
+
+# hyper
+HYPER_SRC=$SRC_HOME/hyper
+HYPER_DEST=$HOME
+ln -sf $HYPER_SRC/hyper.js $HYPER_DEST/.hyper.js
