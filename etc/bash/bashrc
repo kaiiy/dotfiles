@@ -1,3 +1,7 @@
+if test $(service docker status | awk '{print $4}') = 'not'; then 
+        sudo /usr/sbin/service docker start #起動
+fi
+
 exec fish
 
 export VOLTA_HOME="$HOME/.volta"
