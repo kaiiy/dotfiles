@@ -4,7 +4,22 @@
 
 - WSL2
 - Ubuntu 22.04
-- Neovim ~0.8.0
+
+## Installation
+
+1. Install the following applications according to the URL.
+
+- [Homebrew](https://brew.sh)
+- [fish](https://launchpad.net/~fish-shell/+archive/ubuntu/release-3)
+
+2. Run these commands.
+
+```sh
+$ fish
+$ ./bin/init/fisher.sh
+$ ./bin/init/homebrew.sh
+$ ./link.sh
+```
 
 ## Features
 
