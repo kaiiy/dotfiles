@@ -34,7 +34,7 @@ if status is-interactive
     abbr -a ps procs
     abbr -a grep rg
     abbr -a find fd
-    abbr -a pcat /usr/bin/cat
+    # abbr -a pcat /usr/bin/cat
 
     # z 
     alias z="z-wrapper"
