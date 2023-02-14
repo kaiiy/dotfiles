@@ -15,9 +15,11 @@
 2. Run these commands.
 
 ```sh
+$ ./bin/init/homebrew.sh
+
 $ fish
 $ ./bin/init/fisher.sh
-$ ./bin/init/homebrew.sh
+
 $ ./link.sh
 ```
 
