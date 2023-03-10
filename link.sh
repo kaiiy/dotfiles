@@ -26,7 +26,10 @@ ln -sf $FISH_SRC_HOME/config.fish -t $FISH_DEST_HOME/
 cp -f $FISH_SRC_HOME/fish_plugins $FISH_DEST_HOME/
 ln_dir $FISH_SRC_HOME/conf.d/color_scheme.fish $FISH_DEST_HOME/conf.d/
 ln_dir $FISH_SRC_HOME/functions/ $FISH_DEST_HOME/functions/ 
-cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ ~/.config/fish/completions/
+cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ $FISH_DEST_HOME/completions/
+
+# task completion
+wget -O $FISH_DEST_HOME/completions/task.fish https://raw.githubusercontent.com/kaiiy/task-completion-for-fish/main/task.fish  >> /dev/null 2>&1
 
 # lftp 
 ln -sf $SRC_HOME/lftp/lftprc $HOME/.lftprc
