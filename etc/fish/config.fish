@@ -81,9 +81,11 @@ if status is-interactive
     # env 
     # set -x DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 
-    eval "$(zellij setup --generate-auto-start fish)"
-end
+   eval (zellij setup --generate-auto-start fish | string collect)
 
+   if test (service docker status | awk '{print $4}') = 'not';                                                                         sudo service docker start 
+    end
+end
 
 # tabtab source for packages
 # uninstall by removing these lines
