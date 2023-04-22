@@ -54,7 +54,7 @@ if status is-interactive
     # node.js
     abbr -a pn pnpm
     abbr -a px pnpx
-    
+
     # python 
     # alias python3="/home/linuxbrew/.linuxbrew/bin/python3.10"
     # alias pip3="/home/linuxbrew/.linuxbrew/bin/pip3.10"
@@ -63,7 +63,7 @@ if status is-interactive
 
     # set fish_cursor_default line
     # set fish_cursor_insert line
-    
+
     # wsl2
     alias clip="clip.exe"
 
@@ -81,10 +81,9 @@ if status is-interactive
     # env 
     # set -x DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 
-   eval (zellij setup --generate-auto-start fish | string collect)
+    eval (zellij setup --generate-auto-start fish | string collect)
 
-   if test (service docker status | awk '{print $4}') = 'not';                                                                         sudo service docker start 
-    end
+    sudo systemctl start docker
 end
 
 # tabtab source for packages
