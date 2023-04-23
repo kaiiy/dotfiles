@@ -83,7 +83,6 @@ if status is-interactive
 
     eval (zellij setup --generate-auto-start fish | string collect)
 
-    sudo systemctl start docker
 end
 
 # tabtab source for packages
