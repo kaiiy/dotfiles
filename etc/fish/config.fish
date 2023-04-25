@@ -25,7 +25,6 @@ if status is-interactive
     set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
     # rust alt command
-    # abbr -a cat bat
     abbr -a ls exa
     abbr -a la exa -a
     abbr -a ll exa -l
@@ -34,7 +33,6 @@ if status is-interactive
     abbr -a ps procs
     abbr -a grep rg
     abbr -a find fd
-    # abbr -a pcat /usr/bin/cat
 
     # z 
     alias z="z-wrapper"
@@ -56,13 +54,8 @@ if status is-interactive
     abbr -a px pnpx
 
     # python 
-    # alias python3="/home/linuxbrew/.linuxbrew/bin/python3.10"
-    # alias pip3="/home/linuxbrew/.linuxbrew/bin/pip3.10"
     abbr -a poe poetry
     abbr -a python python3
-
-    # set fish_cursor_default line
-    # set fish_cursor_insert line
 
     # wsl2
     alias clip="clip.exe"
@@ -78,11 +71,7 @@ if status is-interactive
     fish_add_path /home/linuxbrew/.linuxbrew/bin
     fish_add_path $HOME/go/bin
 
-    # env 
-    # set -x DISPLAY $(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
-
     eval (zellij setup --generate-auto-start fish | string collect)
-
 end
 
 # tabtab source for packages
