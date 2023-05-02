@@ -7,12 +7,12 @@
 
 ## Installation
 
-1. Install the following applications according to the URL.
+1. Install the following applications according to the URLs.
 
 - [Homebrew](https://brew.sh)
 - [fish](https://launchpad.net/~fish-shell/+archive/ubuntu/release-3)
 
-2. Run these commands.
+2. Run the following commands.
 
 ```sh
 $ ./bin/init/homebrew.sh
@@ -25,7 +25,7 @@ $ ./link.sh
 
 ## Features
 
-- bash (use only to start fish shell)
+- bash (only used to start fish shell)
 - [fish](https://github.com/fish-shell/fish-shell)
 - [volta](https://github.com/volta-cli/volta)
 - [Neovim](https://github.com/neovim/neovim) 
@@ -38,13 +38,13 @@ $ ./link.sh
 
 ## Update
 
-### packages
+### Packages
 
 ```sh
 $ topgrade
 ```
 
-### dotfiles
+### Dotfiles
 
 ```sh
 $ ./link.sh
