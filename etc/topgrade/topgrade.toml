@@ -64,6 +64,7 @@ skip_notify = true
 # Custom commands
 [commands]
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
+"Poetry" = "poetry self update"
 
 [brew]
 #greedy_cask = true
