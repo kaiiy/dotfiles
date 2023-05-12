@@ -33,6 +33,7 @@ if status is-interactive
     abbr -a ps procs
     abbr -a grep rg
     abbr -a find fd
+    abbr -a ca bat
 
     # z 
     alias z="z-wrapper"
