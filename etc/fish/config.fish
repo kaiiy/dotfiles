@@ -1,19 +1,19 @@
 if status is-interactive
-    set -x LANG C.UTF-8
+    set -gx LANG C.UTF-8
 
-    # apt
+    # Apt
     abbr -a ad sudo apt update
     abbr -a ag sudo apt upgrade -y
 
-    # standard command
+    # Commonly used commands
     abbr -a sd pushd
     abbr -a pd popd
     abbr -a du du -sh
 
-    # search my global ip
+    # Get my global IP
     abbr -a ip:g curl inet-ip.info
 
-    # less
+    # Less
     set -x LESS '-g -i -M -R -S -z-4 -x4'
     set -x PAGER less
     set -x LESS_TERMCAP_mb (printf "\e[01;31m")
@@ -24,7 +24,7 @@ if status is-interactive
     set -x LESS_TERMCAP_ue (printf "\e[0m")
     set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
-    # rust alt command
+    # Rust commands
     abbr -a ls exa
     abbr -a la exa -a
     abbr -a ll exa -l
@@ -35,10 +35,10 @@ if status is-interactive
     abbr -a find fd
     abbr -a ca bat
 
-    # z 
+    # Z
     alias z="z-wrapper"
 
-    # git
+    # Git
     abbr -a gc git commit -m
     abbr -a ga git add .
     abbr -a gp git pull
@@ -50,21 +50,21 @@ if status is-interactive
     alias open="explorer.exe"
     abbr -a dc docker compose
 
-    # node.js
+    # Node.js
     abbr -a pn pnpm
     abbr -a px pnpx
 
-    # python 
+    # Python
     abbr -a poe poetry
     abbr -a python python3
 
-    # wsl2
+    # Wsl2
     alias clip="clip.exe"
 
-    # generate a password
+    # Generate a password
     abbr -a mkpass pwgen -cnsB 12
 
-    # path 
+    # Path 
     fish_add_path $HOME/.cargo/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/.volta/bin
