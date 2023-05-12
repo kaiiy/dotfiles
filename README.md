@@ -40,11 +40,15 @@ $ ./link.sh
 
 ### Packages
 
+To update installed packages, run the following command:
+
 ```sh
 $ topgrade
 ```
 
 ### Dotfiles
+
+To update dotfiles, run the following command:
 
 ```sh
 $ ./link.sh
