@@ -23,7 +23,6 @@ keybinds clear-defaults=true {
     }
     pane {
         bind "Ctrl g" { SwitchToMode "locked"; }
-        bind "Ctrl n" { SwitchToMode "resize"; }
         bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl p" "Enter" "Space" "Esc" { SwitchToMode "normal"; }
         bind "Ctrl s" { SwitchToMode "scroll"; }
