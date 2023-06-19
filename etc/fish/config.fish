@@ -48,7 +48,6 @@ if status is-interactive
 
     abbr -a vim nvim
     abbr -a rm trash-put
-    alias open="explorer.exe"
     abbr -a dc docker compose
 
     # Node.js
@@ -61,6 +60,7 @@ if status is-interactive
 
     # Wsl2
     alias clip="clip.exe"
+    alias open="explorer.exe"
 
     # Generating a password
     abbr -a mkpass pwgen -cnsB 12
