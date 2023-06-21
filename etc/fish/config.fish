@@ -44,7 +44,7 @@ if status is-interactive
     abbr -a ga git add .
     abbr -a gp git pull
     abbr -a gu git push
-    abbr -a gl git log --oneline --graph --color=always
+    abbr -a gl git log --oneline --graph --color=always | bat
 
     abbr -a vim nvim
     abbr -a rm trash-put
