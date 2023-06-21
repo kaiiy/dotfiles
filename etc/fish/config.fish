@@ -49,6 +49,7 @@ if status is-interactive
     abbr -a vim nvim
     abbr -a rm trash-put
     abbr -a dc docker compose
+    abbr -a ns nslookup
 
     # Node.js
     abbr -a pn pnpm
