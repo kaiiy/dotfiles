@@ -52,7 +52,7 @@ ln -sf $TOPGRADE_SRC/topgrade.toml $TOPGRADE_DEST
 ZELLIJ_SRC=$SRC/zellij
 ZELLIJ_DEST=$DEST/zellij
 
-mkdir -p $ZELLIJ_DEST/theme/
+mkdir -p $ZELLIJ_DEST/
 ln -sf $ZELLIJ_SRC/config.kdl -t $ZELLIJ_DEST/
 
 # bat
