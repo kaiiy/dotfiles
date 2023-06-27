@@ -148,8 +148,8 @@ keybinds clear-defaults=true {
         bind "Ctrl n" { SwitchToMode "resize"; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "normal"; }
         bind "Ctrl q" { Quit; }
-        bind "j" "Down" { ScrollDown; }
-        bind "k" "Up" { ScrollUp; }
+        bind "w" "Down" { ScrollDown; }
+        bind "s" "Up" { ScrollUp; }
         bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
         bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
