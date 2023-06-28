@@ -137,8 +137,8 @@ keybinds clear-defaults=true {
         bind "Alt -" { Resize "Decrease"; }
     }
     scroll {
-        bind "e" { EditScrollback; SwitchToMode "normal"; }
-        bind "Ctrl s" "Space" "Enter" "Esc" { SwitchToMode "normal"; }
+ //       bind "e" { EditScrollback; SwitchToMode "normal"; }
+        bind "e" "Ctrl s" "Space" "Enter" "Esc" { SwitchToMode "normal"; }
         bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl g" { SwitchToMode "locked"; }
         bind "Ctrl p" { SwitchToMode "pane"; }
