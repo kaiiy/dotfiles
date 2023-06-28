@@ -66,6 +66,7 @@ skip_notify = true
 [commands]
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 "Poetry" = "poetry self update"
+"AstroNvim" = "nvim +AstroUpdatePackages +q +q"
 
 [brew]
 #greedy_cask = true
