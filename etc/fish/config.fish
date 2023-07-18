@@ -13,6 +13,7 @@ if status is-interactive
 
     # Get my global IP
     abbr -a ip:g curl inet-ip.info
+    abbr -a pg ping 8.8.8.8
 
     # Less
     set -x LESS '-g -i -M -R -S -z-4 -x4'
