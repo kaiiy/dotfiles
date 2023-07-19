@@ -1,3 +1,4 @@
+# Clean system objects
 function ks
     set_color green; echo "[z]"; set_color normal
     z -c
