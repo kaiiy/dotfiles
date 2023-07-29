@@ -28,6 +28,9 @@ ln_dir $FISH_SRC/conf.d/color_scheme.fish $FISH_DEST/conf.d/
 ln_dir $FISH_SRC/functions/ $FISH_DEST/functions/
 cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ $FISH_DEST/completions/
 
+# task completion
+wget -O $FISH_DEST/completions/task.fish https://raw.githubusercontent.com/go-task/task/main/completion/fish/task.fish >>/dev/null 2>&1
+
 # lftp
 ln -sf $SRC/lftp/lftprc $HOME/.lftprc
 
