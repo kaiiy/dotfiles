@@ -1,0 +1,1 @@
+complete -c gk -f -n "__fish_use_subcommand" -a "--no-push" -d "Do not execute git push"
