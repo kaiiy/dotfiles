@@ -10,7 +10,6 @@ if status is-interactive
     abbr -a pd popd
     abbr -a du du -sh
     abbr -a vs code .
-    abbr -a ghc gh repo clone (gh repo list --json name --jq '.[].name' -L 1000 | fzf)
 
     # Get my global IP
     abbr -a ip:g curl inet-ip.info
