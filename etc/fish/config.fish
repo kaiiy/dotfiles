@@ -10,6 +10,7 @@ if status is-interactive
     abbr -a pd popd
     abbr -a du du -sh
     abbr -a vs code .
+    abbr -a st sgpt
 
     # Get my global IP
     abbr -a ip:g curl inet-ip.info
