@@ -13,8 +13,8 @@ if status is-interactive
     abbr -a st sgpt
 
     # Get my global IP
-    abbr -a ip:g curl inet-ip.info
-    abbr -a pg ping 8.8.8.8
+    abbr -a k:myip curl inet-ip.info
+    abbr -a k:pingoo ping 8.8.8.8
 
     # Less
     set -x LESS '-g -i -M -R -S -z-4 -x4'
