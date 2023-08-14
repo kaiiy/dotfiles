@@ -24,7 +24,7 @@ mkdir -p $FISH_DEST/completions/
 
 ln -sf $FISH_SRC/config.fish -t $FISH_DEST/
 cp -f $FISH_SRC/fish_plugins $FISH_DEST/
-ln_dir $FISH_SRC/conf.d/color_scheme.fish $FISH_DEST/conf.d/
+ln -sf $FISH_SRC/conf.d/color_scheme.fish $FISH_DEST/conf.d/
 ln_dir $FISH_SRC/functions/ $FISH_DEST/functions/
 ln_dir $FISH_SRC/completions/ $FISH_DEST/completions/
 cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ $FISH_DEST/completions/
