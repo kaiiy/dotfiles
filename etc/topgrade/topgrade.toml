@@ -3,7 +3,7 @@
 assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["containers", "composer", "node", "choosenim", "stack", "vim", "cargo", "pnpm", "flutter", "tldr", "dotnet"]
+disable = ["containers", "composer", "node", "choosenim", "stack", "vim", "cargo", "pnpm", "flutter", "tldr", "dotnet", "pip3"]
 
 # Ignore failures for these steps
 # ignore_failures = [] 
