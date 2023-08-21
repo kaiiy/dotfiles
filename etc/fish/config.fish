@@ -11,6 +11,7 @@ if status is-interactive
     abbr -a du du -sh
     abbr -a vs code .
     abbr -a st sgpt
+    abbr -a mh mohaya
 
     # Get my global IP
     abbr -a k:myip curl inet-ip.info
