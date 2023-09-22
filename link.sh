@@ -35,15 +35,6 @@ wget -O $FISH_DEST/completions/task.fish https://raw.githubusercontent.com/go-ta
 # lftp
 ln -sf $SRC/lftp/lftprc $HOME/.lftprc
 
-# nvim
-# migrating to AstroNvim (https://github.com/AstroNvim/AstroNvim)
-# NVIM_SRC=$SRC/nvim
-# NVIM_DEST=$DEST/nvim
-
-# mkdir -p $NVIM_DEST/configs/
-# ln -sf $NVIM_SRC/init.vim -t $NVIM_DEST/
-# ln_dir $NVIM_SRC/configs/ $NVIM_DEST/configs/
-
 # topgrade
 TOPGRADE_SRC=$SRC/topgrade
 TOPGRADE_DEST=$DEST
