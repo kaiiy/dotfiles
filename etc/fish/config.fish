@@ -35,7 +35,7 @@ if status is-interactive
     abbr -a lla exa -la
     abbr -a tree exa --tree
     abbr -a ps procs
-    abbr -a grep rg
+    # abbr -a grep rg
     abbr -a find fd
     abbr -a ca bat
 
