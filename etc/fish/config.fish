@@ -16,7 +16,7 @@ if status is-interactive
 
     # Get my global IP
     abbr -a k:myip curl inet-ip.info
-    abbr -a k:pingoo ping 8.8.8.8
+    abbr -a p8 ping 8.8.8.8
 
     # Less
     set -x LESS '-g -i -M -R -S -z-4 -x4'
