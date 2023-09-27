@@ -3,25 +3,7 @@
 ## Requirements
 
 - WSL2
-- Ubuntu 22.04
-
-## Installation
-
-1. Install the following applications according to the URLs.
-
-- [Homebrew](https://brew.sh)
-- [fish](https://launchpad.net/~fish-shell/+archive/ubuntu/release-3)
-
-2. Run the following commands.
-
-```sh
-$ ./bin/homebrew.sh
-
-$ fish
-$ ./bin/fisher.sh
-
-$ ./link.sh
-```
+- Ubuntu 23.04
 
 ## Features
 
