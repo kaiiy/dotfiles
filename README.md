@@ -5,6 +5,19 @@
 - WSL2
 - Ubuntu 23.04
 
+## Installation
+
+```sh
+$ sudo apt-add-repository ppa:fish-shell/release-3
+$ sudo apt update
+$ sudo apt install fish
+$ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+$ ./link.sh
+$ fisher update
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ brew install neovim zellij bat
+```
+
 ## Features
 
 - bash (only used to start fish shell)
