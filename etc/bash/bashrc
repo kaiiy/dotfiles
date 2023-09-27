@@ -1,5 +1,6 @@
-if [ -f "$HOME/.rye/env"]; then
+if [ -f "$HOME/.rye/env" ]; then
     source "$HOME/.rye/env"
+fi
 
 exec fish
 
