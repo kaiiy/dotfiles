@@ -54,6 +54,7 @@ if status is-interactive
     abbr -a rm trash-put
     abbr -a dc docker compose
     abbr -a ns nslookup
+    abbr -a hf "history | fzf"
 
     # Node.js
     abbr -a pn pnpm
@@ -67,7 +68,6 @@ if status is-interactive
     alias clip="clip.exe"
     alias open="explorer.exe"
 
-    # Generating a password
     abbr -a mkpass pwgen -cnsB 12
 
     # Path 
