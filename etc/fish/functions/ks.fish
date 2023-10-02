@@ -7,6 +7,6 @@ function ks
     set_color green; echo "[.local/share/Trash]"; set_color normal
     mkdir -p ~/.local/share/Trash
     set trash_msg (du -sh ~/.local/share/Trash/)
-    rm -rfv ~/.local/share/Trash/ | grep --color=never 'directory' | grep ---color=never -E "files/[^/]+\$"
+    rm -rfv ~/.local/share/Trash/ | grep --color=never 'directory' | grep -E "files/[^/]+\$" --color=never
     echo Total reclaimed space: $trash_msg
 end
