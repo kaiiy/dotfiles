@@ -13,6 +13,7 @@ if status is-interactive
     abbr -a st sgpt
     abbr -a mh mohaya
     abbr -a ip ip -c
+    abbr -a wh which
 
     # Get my global IP
     abbr -a myip curl inet-ip.info
