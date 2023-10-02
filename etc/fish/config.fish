@@ -56,7 +56,8 @@ if status is-interactive
     abbr -a dc docker compose
     abbr -a ns nslookup
     abbr -a hf "history | fzf"
-
+    abbr -a tg topgrade
+    
     # Node.js
     abbr -a pn pnpm
     abbr -a px pnpx
