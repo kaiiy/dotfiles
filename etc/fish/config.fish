@@ -14,6 +14,8 @@ if status is-interactive
     abbr -a mh mohaya
     abbr -a ip ip -c
     abbr -a wh which
+    abbr -a tgz tar zcvf
+    abbr -a untgz tar zxvf
 
     # Get my global IP
     abbr -a myip curl inet-ip.info
