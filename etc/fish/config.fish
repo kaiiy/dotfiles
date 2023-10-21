@@ -23,6 +23,7 @@ if status is-interactive
     abbr -a myip curl inet-ip.info
     abbr -a p8 ping 8.8.8.8
     abbr -a cl clear
+    abbr -a p ping
 
     # Less
     set -x LESS '-g -i -M -R -S -z-4 -x4'
