@@ -50,32 +50,32 @@ inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
 inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 
 syntax enable
-colorscheme tokyonight
+# colorscheme tokyonight
 
-let g:lightline = {
-	\ 'colorscheme': 'tokyonight',
-	\ 'active': {
-	\   'left': [ [ 'mode', 'paste' ],
-    \       	  [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-    \ },
-    \ 'component_function': {
-    \   'cocstatus': 'coc#status'
-    \ },
-  \ }
-let g:rainbow_active = 1 
-let g:cursorhold_updatetime = 100
+#let g:lightline = {
+#	\ 'colorscheme': 'tokyonight',
+#	\ 'active': {
+#	\   'left': [ [ 'mode', 'paste' ],
+#    \       	  [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+#    \ },
+#    \ 'component_function': {
+#    \   'cocstatus': 'coc#status'
+#    \ },
+#  \ }
+#let g:rainbow_active = 1 
+#let g:cursorhold_updatetime = 100
 
-call plug#begin()
-Plug 'itchyny/lightline.vim'
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'mechatroner/rainbow_csv'
-Plug 'luochen1990/rainbow'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ghifarit53/tokyonight-vim', {'do': 'cp colors/* ~/.config/nvim/colors/'}
-Plug 'vim-denops/denops.vim'
-Plug 'Shougo/ddu.vim'
-Plug 'dag/vim-fish'
+#call plug#begin()
+#Plug 'itchyny/lightline.vim'
+#Plug 'lukas-reineke/indent-blankline.nvim'
+#Plug 'ryanoasis/vim-devicons'
+#Plug 'mechatroner/rainbow_csv'
+#Plug 'luochen1990/rainbow'
+#Plug 'neoclide/coc.nvim', {'branch': 'release'}
+#Plug 'ghifarit53/tokyonight-vim', {'do': 'cp colors/* ~/.config/nvim/colors/'}
+#Plug 'vim-denops/denops.vim'
+#Plug 'Shougo/ddu.vim'
+#Plug 'dag/vim-fish'
 call plug#end()
 
 filetype plugin indent on
