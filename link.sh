@@ -54,6 +54,13 @@ BAT_DEST=$DEST/bat
 mkdir -p $BAT_DEST/
 ln -sf $BAT_SRC/config -t $BAT_DEST
 
+# git 
+GIT_SRC=$SRC/git
+GIT_DST=$DEST/git
+
+mkdir -p $GIT_DST
+ln -sf $GIT_SRC/ignore -t $GIT_DST
+
 # inkscape
 # INKSCAPE_SRC=$SRC/inkscape
 # INKSCAPE_DEST=$DEST/inkscape
