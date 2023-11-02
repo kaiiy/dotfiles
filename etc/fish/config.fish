@@ -18,7 +18,7 @@ if status is-interactive
     abbr -a untgz tar zxvf
     abbr -a hfc "history | fzf | clip"
     abbr -a h history	
-    abbr -m m mohaya
+    abbr -a m mohaya
 
     # Get my global IP
     abbr -a myip curl inet-ip.info
