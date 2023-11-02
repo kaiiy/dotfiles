@@ -18,11 +18,12 @@ if status is-interactive
     abbr -a untgz tar zxvf
     abbr -a hfc "history | fzf | clip"
     abbr -a h history	
+    abbr -m m mohaya
 
     # Get my global IP
     abbr -a myip curl inet-ip.info
     abbr -a p8 ping 8.8.8.8
-    abbr -a cl clear
+    abbr -a c clear
     abbr -a p ping
 
     # Less
