@@ -4,7 +4,7 @@ function ghc
 
     if test (count $argv) -eq 1
         set repo_name $argv[1]
-        set matched_repo (printf $all_repo_names_str | grep $repo_name)
+        set matched_repo (printf $all_repo_names_str | grep -F "$repo_name")
         if test (count $matched_repo) -eq 1
             gh repo clone $matched_repo
             return
