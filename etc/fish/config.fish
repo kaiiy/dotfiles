@@ -57,7 +57,7 @@ if status is-interactive
     abbr -a gp git pull
     abbr -a gu git push
     abbr -a gl git log --oneline --graph --color=always
-    abbr -a gg npx aicommits
+    abbr -a gg npx aicommits --all
 
     abbr -a vim nvim
     abbr -a rm trash-put
