@@ -17,7 +17,7 @@ if status is-interactive
     abbr -a tgz tar zcvf
     abbr -a untgz tar zxvf
     abbr -a hfc "history | fzf | clip"
-    abbr -a h history	
+    abbr -a h history
     abbr -a m mohaya
 
     # Get my global IP
@@ -51,6 +51,9 @@ if status is-interactive
     # Z
     alias z="z-wrapper"
 
+    # fzf (Tokyo Night Theme)
+    set -Ux FZF_DEFAULT_OPTS "--color=fg:#c0caf5,bg:#1a1b26,hl:#bb9af7 --color=fg+:#ffffff,bg+:#1a1b26,hl+:#7dcfff --color=info:#7aa2f7,prompt:#7dcfff,pointer:#7dcfff --color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a"
+
     # Git
     abbr -a gc git commit -m
     abbr -a ga git add .
@@ -65,7 +68,7 @@ if status is-interactive
     abbr -a ns nslookup
     abbr -a hf "history | fzf"
     abbr -a tg topgrade
-    
+
     # Node.js
     abbr -a pn pnpm
     abbr -a px pnpx
