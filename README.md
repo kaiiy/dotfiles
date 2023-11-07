@@ -23,7 +23,8 @@ $ cd ./etc/brew
 $ brew bundle
 ```
 
-**Option**
+**Options**
+
 
 ```sh
 $ curl https://get.volta.sh | bash
