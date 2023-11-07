@@ -8,6 +8,8 @@
 ## Installation
 
 ```sh
+$ git clone git@github.com:kaiiy/dotfiles.git
+$ cd dotfiles/
 $ sudo apt-add-repository ppa:fish-shell/release-3
 $ sudo apt update
 $ sudo apt install fish
@@ -17,6 +19,8 @@ $ ./link.sh
 $ fisher update
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 $ brew install neovim zellij bat exa
+$ cd ./etc/brew
+$ brew bundle
 ```
 
 ## Features
