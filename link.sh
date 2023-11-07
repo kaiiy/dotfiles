@@ -32,9 +32,6 @@ cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ $FISH_DEST/c
 # task completion
 wget -O $FISH_DEST/completions/task.fish https://raw.githubusercontent.com/go-task/task/main/completion/fish/task.fish >>/dev/null 2>&1
 
-# lftp
-ln -sf $SRC/lftp/lftprc $HOME/.lftprc
-
 # topgrade
 TOPGRADE_SRC=$SRC/topgrade
 TOPGRADE_DEST=$DEST
