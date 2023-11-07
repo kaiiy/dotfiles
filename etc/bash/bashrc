@@ -4,3 +4,5 @@ fi
 
 exec fish
 
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
