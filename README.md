@@ -23,6 +23,12 @@ $ cd ./etc/brew
 $ brew bundle
 ```
 
+**Option**
+
+```sh
+$ curl https://get.volta.sh | bash
+```
+
 ## Features
 
 - bash (only used to start fish shell)
