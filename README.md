@@ -16,7 +16,7 @@ $ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/
 $ ./link.sh
 $ fisher update
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-$ brew install neovim zellij bat
+$ brew install neovim zellij bat exa
 ```
 
 ## Features
