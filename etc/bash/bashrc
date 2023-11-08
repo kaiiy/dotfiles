@@ -3,6 +3,3 @@ if [ -f "$HOME/.rye/env" ]; then
 fi
 
 exec fish
-
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
