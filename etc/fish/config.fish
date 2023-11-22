@@ -5,26 +5,33 @@ if status is-interactive
     abbr -a ad sudo apt update
     abbr -a ag sudo apt upgrade -y
 
-    # Commonly used commands
+    # Linux commands
     abbr -a sd pushd
     abbr -a pd popd
     abbr -a du du -sh
-    abbr -a vs code .
-    abbr -a st sgpt
-    abbr -a mh mohaya
-    abbr -a ip ip -c
     abbr -a wh which
-    abbr -a tgz tar zcvf
-    abbr -a untgz tar zxvf
-    abbr -a hfc "history | fzf | clip"
-    abbr -a h history
-    abbr -a m mohaya
     abbr -a c clear
+    abbr -a ns nslookup
+
+    # Common commands
+    abbr -a vs code .
+    abbr -a vim nvim
+    abbr -a dc docker compose
 
     # IP
+    abbr -a ip ip -c
     abbr -a myip curl inet-ip.info
     abbr -a p8 ping 8.8.8.8
     abbr -a p ping
+
+    # Tar
+    abbr -a tgz tar zcvf
+    abbr -a untgz tar zxvf
+
+    # History
+    abbr -a h history
+    abbr -a hf "history | fzf"
+    abbr -a hfc "history | fzf | clip"
 
     # Less
     set -x LESS '-g -i -M -R -S -z-4 -x4'
@@ -37,7 +44,7 @@ if status is-interactive
     set -x LESS_TERMCAP_ue (printf "\e[0m")
     set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
-    # Rust commands
+    # Linuxbrew commands
     abbr -a ls eza
     abbr -a la eza -a
     abbr -a ll eza -l
@@ -47,6 +54,8 @@ if status is-interactive
     # abbr -a grep rg
     abbr -a find fd
     abbr -a ca bat
+    abbr -a tg topgrade
+    abbr -a rm trash-put
 
     # Z
     alias z="z-wrapper"
@@ -62,19 +71,7 @@ if status is-interactive
     abbr -a gl git log --oneline --graph --color=always
     abbr -a gg npx aicommits --all
 
-    abbr -a vim nvim
-    abbr -a rm trash-put
-    abbr -a dc docker compose
-    abbr -a ns nslookup
-    abbr -a hf "history | fzf"
-    abbr -a tg topgrade
-
-    # Node.js
-    abbr -a pn pnpm
-    abbr -a px pnpx
-
     # Python
-    abbr -a poe poetry
     abbr -a python python3
 
     # Wsl2
@@ -82,6 +79,9 @@ if status is-interactive
     alias open="explorer.exe"
 
     abbr -a mkpass pwgen -cnsB 12
+
+    # Original
+    abbr -a m mohaya
 
     # Path 
     fish_add_path $HOME/.cargo/bin
