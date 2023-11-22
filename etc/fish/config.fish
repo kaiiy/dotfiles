@@ -19,11 +19,11 @@ if status is-interactive
     abbr -a hfc "history | fzf | clip"
     abbr -a h history
     abbr -a m mohaya
+    abbr -a c clear
 
-    # Get my global IP
+    # IP
     abbr -a myip curl inet-ip.info
     abbr -a p8 ping 8.8.8.8
-    abbr -a c clear
     abbr -a p ping
 
     # Less
@@ -38,11 +38,11 @@ if status is-interactive
     set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
     # Rust commands
-    abbr -a ls exa
-    abbr -a la exa -a
-    abbr -a ll exa -l
-    abbr -a lla exa -la
-    abbr -a tree exa --tree
+    abbr -a ls eza
+    abbr -a la eza -a
+    abbr -a ll eza -l
+    abbr -a lla eza -la
+    abbr -a tree eza --tree
     abbr -a ps procs
     # abbr -a grep rg
     abbr -a find fd
