@@ -91,6 +91,7 @@ if status is-interactive
     fish_add_path /home/linuxbrew/.linuxbrew/bin
     fish_add_path $HOME/go/bin
     fish_add_path $HOME/.rye/shims
+    fish_add_path $HOME/.deno/bin
 
     eval (zellij setup --generate-auto-start fish | string collect)
 end
