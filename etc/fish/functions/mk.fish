@@ -1,6 +1,6 @@
 # Create a new directory with a name randomly selected
 function mk
-    set -l words apple banana carrot donut egg fish grape honey ice cream jam kiwi lemon mango nut orange pizza quiche rice strawberry tomato udon vanilla watermelon xigua yogurt zucchini
+    set -l words apple banana carrot donut egg fish grape honey ice cream jam kiwi lemon mango nut orange peach quiche rice salad tomato udon vanilla wasabi xigua yogurt zucchini
     for i in (seq 10)  # Attempt directory creation up to 10 times.
         set -l word $words[(random 1 (count $words))]  # Select a word randomly.
         set -l dir_name tmp.$word  # Generate the directory name.
