@@ -60,3 +60,31 @@ To update dotfiles, run the following command:
 ```sh
 $ ./link.sh
 ```
+
+## Fonts
+
+### VSCode 
+
+[JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+
+```json
+{
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace"
+}
+```
+
+### Terminal
+
+[Monaspice](https://www.nerdfonts.com/font-downloads#:~:text=to%20improve%20legibility-,Download,-Preview%20on%20ProgrammingFonts)
+
+```json
+{
+      "profiles": {
+        "defaults": {
+            "font": {
+                "face": "MonaspiceNe Nerd Font Propo" 
+            }
+        }
+      }
+}
+```

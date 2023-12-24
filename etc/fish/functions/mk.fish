@@ -14,5 +14,5 @@ function mk
 
     echo "Error: Unable to create directory after 10 attempts."
     return 1  # Return 1 to indicate failure.
-end
+end 
 
