@@ -1,6 +1,6 @@
 # Create a new directory with a name randomly selected
 function mk
-    set -l words fingerroot celery.seed adjika brown.mustard thai.basil sesame sarsaparilla gochujang sassafras star.anise garlic bouquet.garni vanilla vadouvan sorrel idli.podi culantro zereshk angelica lemon.balm saffron panch.phoron zedoary onion.powder mahlab harissa hyssop radhuni tarragon ajwain woodruff sharena.sol korarima aonori baharat mitmita mixed.spice white.mustard caraway allspice fennel cassia tamarind lovage asafoetida cilantro amchoor douchi hoja.santa black.mustard long.pepper dried.lime ras.el.hanout nutmeg turmeric tonka.bean ginger litsea.cubeba parsley golpar sansho liquorice chaunk khmeli.suneli wasabi oregano chenpi marjoram njangsa camphor cicely holy.basil curry.leaf berbere recado.rojo mugwort chives cinnamon borage epazote paprika poppy.seed lavender nigella savory advieh bay.leaf mastic perilla hawaij crab.boil kinh.gioi juniper.berry horseradish
+    set -l words apple banana carrot donut egg fish grape honey ice cream jam kiwi lemon mango nut orange pizza quiche rice strawberry tomato udon vanilla watermelon xigua yogurt zucchini
     for i in (seq 10)  # Attempt directory creation up to 10 times.
         set -l word $words[(random 1 (count $words))]  # Select a word randomly.
         set -l dir_name tmp.$word  # Generate the directory name.
