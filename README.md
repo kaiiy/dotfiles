@@ -2,25 +2,20 @@
 
 ## Requirements
 
-- WSL2
 - Ubuntu 23.04
+- Homebrew
 
 ## Installation
 
 ```sh
 $ git clone git@github.com:kaiiy/dotfiles.git
 $ cd dotfiles/
-$ sudo apt-add-repository ppa:fish-shell/release-3
-$ sudo apt update
-$ sudo apt install fish
+$ brew install fish
 $ fish
 $ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 $ ./link.sh
 $ fisher update
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-$ brew install neovim zellij bat exa
-$ cd ./etc/brew
-$ brew bundle
+$ brew bundle --file ./etc/brew/Brewfile
 ```
 
 **Options**
