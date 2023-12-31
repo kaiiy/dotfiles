@@ -11,8 +11,7 @@
 $ git clone git@github.com:kaiiy/dotfiles.git
 $ cd dotfiles/
 $ brew install fish
-$ fish
-$ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+$ fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
 $ ./link.sh
 $ fisher update
 $ brew bundle --file ./etc/brew/Brewfile
