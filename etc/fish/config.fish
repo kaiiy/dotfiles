@@ -50,7 +50,7 @@ if status is-interactive
     abbr -a ll eza -l
     abbr -a lla eza -la
     abbr -a tree eza --tree
-    abbr -a ps procs
+    # abbr -a ps procs
     # abbr -a grep rg
     abbr -a find fd
     abbr -a ca bat
