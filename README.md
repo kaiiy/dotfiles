@@ -59,26 +59,24 @@ $ ./link.sh
 
 ## Fonts
 
-### VSCode 
+[JetBrainsMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads#:~:text=font%20for%20developers-,Download,-Preview%20on%20ProgrammingFonts)
 
-[JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+### VSCode 
 
 ```json
 {
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Consolas, 'Courier New', monospace"
 }
 ```
 
-### Terminal
-
-[Monaspice](https://www.nerdfonts.com/font-downloads#:~:text=to%20improve%20legibility-,Download,-Preview%20on%20ProgrammingFonts)
+### Windows Terminal
 
 ```json
 {
       "profiles": {
         "defaults": {
             "font": {
-                "face": "MonaspiceNe Nerd Font Propo" 
+                "face": "JetBrainsMono Nerd Font Mono" 
             }
         }
       }
