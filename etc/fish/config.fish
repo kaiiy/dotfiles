@@ -75,6 +75,7 @@ if status is-interactive
     # Python
     abbr -a python python3
     abbr -a poe poetry
+    alias python="python3"
 
     # Wsl2
     alias clip="clip.exe"
