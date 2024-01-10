@@ -70,7 +70,7 @@ if status is-interactive
     abbr -a gu git push
     abbr -a gf git dft --staged
     abbr -a gl git log --oneline --graph --color=always
-    abbr -a gg deno run --allow-read --allow-env --allow-run --allow-net https://raw.githubusercontent.com/kaiiy/aicommits/develop/src/cli.ts --all
+    abbr -a gg deno run -A https://raw.githubusercontent.com/kaiiy/aicommits/develop/src/cli.ts --all
 
     # Python
     abbr -a python python3
