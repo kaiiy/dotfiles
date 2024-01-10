@@ -81,7 +81,7 @@ if status is-interactive
     alias clip="clip.exe"
     alias open="explorer.exe"
 
-    abbr -a mkpass pwgen -cnsB 12
+    abbr -a mkpass "pwgen -1sycnB 12 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
 
     # Original
     abbr -a m mohaya
