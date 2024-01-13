@@ -16,6 +16,7 @@ if status is-interactive
     # Common commands
     abbr -a vs code .
     abbr -a vim nvim
+    abbr -a d docker
     abbr -a dc docker compose
 
     # IP
