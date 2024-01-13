@@ -1,1 +1,0 @@
-pip install shell-gpt
