@@ -80,7 +80,7 @@ skip_notify = true
 [commands]
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 "Volta" = "curl https://get.volta.sh | bash -s -- --skip-setup"
-"Rye" = "rye self update"
+# "Rye" = "rye self update"
 
 [brew]
 #greedy_cask = true
