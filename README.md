@@ -15,8 +15,9 @@ $ sudo apt update
 $ sudo apt install fish
 $ fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
 $ ./link.sh
-$ fisher update
 $ brew bundle --file ./etc/brew/Brewfile
+$ fish
+$ fisher update
 ```
 
 **Options**
