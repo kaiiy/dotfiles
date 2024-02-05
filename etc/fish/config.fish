@@ -18,6 +18,7 @@ if status is-interactive
     abbr -a vim nvim
     abbr -a d docker
     abbr -a dc docker compose
+    abbr -a y yarn
 
     # IP
     abbr -a ip ip -c
@@ -65,6 +66,7 @@ if status is-interactive
     set -Ux FZF_DEFAULT_OPTS "--color=fg:#c0caf5,bg:#1a1b26,hl:#bb9af7 --color=fg+:#ffffff,bg+:#1a1b26,hl+:#7dcfff --color=info:#7aa2f7,prompt:#7dcfff,pointer:#7dcfff --color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a"
 
     # Git
+    abbr -a g git
     abbr -a gc git commit -m
     abbr -a ga git add .
     abbr -a gp git pull
