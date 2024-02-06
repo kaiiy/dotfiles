@@ -1,6 +1,17 @@
 if status is-interactive
     set -gx LANG C.UTF-8
 
+    # 1 character
+    abbr -a c clear
+    abbr -a d docker
+    abbr -a g git
+    abbr -a h history
+    abbr -a l ls
+    abbr -a m mohaya
+    abbr -a p ping
+    abbr -a y yarn
+    alias z="z-wrapper"
+
     # Apt
     abbr -a ad sudo apt update
     abbr -a ag sudo apt upgrade -y
@@ -10,28 +21,23 @@ if status is-interactive
     abbr -a pd popd
     abbr -a du du -sh
     abbr -a wh which
-    abbr -a c clear
     abbr -a ns nslookup
 
     # Common commands
     abbr -a vs code .
     abbr -a vim nvim
-    abbr -a d docker
     abbr -a dc docker compose
-    abbr -a y yarn
 
     # IP
     abbr -a ip ip -c
     abbr -a myip curl inet-ip.info
     abbr -a p8 ping 8.8.8.8
-    abbr -a p ping
 
     # Tar
     abbr -a tgz tar zcvf
     abbr -a untgz tar zxvf
 
     # History
-    abbr -a h history
     abbr -a hf "history | fzf"
     abbr -a hfc "history | fzf | clip"
 
@@ -59,14 +65,10 @@ if status is-interactive
     abbr -a tg topgrade
     abbr -a rm trash-put
 
-    # Z
-    alias z="z-wrapper"
-
     # fzf (Tokyo Night Theme)
     set -Ux FZF_DEFAULT_OPTS "--color=fg:#c0caf5,bg:#1a1b26,hl:#bb9af7 --color=fg+:#ffffff,bg+:#1a1b26,hl+:#7dcfff --color=info:#7aa2f7,prompt:#7dcfff,pointer:#7dcfff --color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a"
 
     # Git
-    abbr -a g git
     abbr -a gc git commit -m
     abbr -a ga git add .
     abbr -a gp git pull
@@ -85,9 +87,6 @@ if status is-interactive
     alias open="explorer.exe"
 
     abbr -a mkpass "pwgen -1sycnB 12 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
-
-    # Original
-    abbr -a m mohaya
 
     # Path 
     fish_add_path $HOME/.cargo/bin
