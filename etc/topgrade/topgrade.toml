@@ -17,6 +17,7 @@ disable = [
     "dotnet",
     "pip3",
     "firmware",
+    "deno"
 ]
 
 # Ignore failures for these steps
