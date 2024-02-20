@@ -77,6 +77,8 @@ if status is-interactive
     abbr -a gf git dft --staged
     abbr -a gl git log --oneline --graph --color=always
     abbr -a gg aicommits --all
+    git config --global pull.rebase true
+    git config --global init.defaultBranch main
 
     # Python
     abbr -a python python3
