@@ -9,6 +9,7 @@ if status is-interactive
     abbr -a l ls
     abbr -a m mohaya
     abbr -a p ping
+    abbr -a w which
     abbr -a y yarn
     alias z="z-wrapper"
 
