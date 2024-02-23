@@ -101,5 +101,7 @@ if status is-interactive
     fish_add_path $HOME/.rye/shims
     fish_add_path $HOME/.deno/bin
 
+    eval "$(ssh-agent -c)" > /dev/null
+
     eval (zellij setup --generate-auto-start fish | string collect)
 end
