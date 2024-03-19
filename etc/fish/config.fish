@@ -36,8 +36,12 @@ if status is-interactive
     abbr -a p8 ping 8.8.8.8
 
     # Tar
-    abbr -a tgz tar zcvf
-    abbr -a untgz tar zxvf
+    abbr -a tar "tar --create --verbose --file=\"archive.tar\""
+    abbr -a untar tar --extract --verbose --file
+    abbr -a tar-gz "tar --create --gzip --verbose --file=\"archive.tar.gz\""
+    abbr -a untar-gz "tar --extract --gzip --verbose --file"
+    abbr -a tar-xz "tar --create --xz --verbose --file=\"archive.tar.xz\""
+    abbr -a untar-xz "tar --extract --xz --verbose --file"
 
     # History
     abbr -a hf "history | fzf"
@@ -84,6 +88,7 @@ if status is-interactive
     # Python
     abbr -a python python3
     abbr -a poe poetry
+    alias pip="pip3"
     alias python="python3"
 
     # Wsl2
@@ -96,10 +101,8 @@ if status is-interactive
     fish_add_path $HOME/.cargo/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/.volta/bin
-    fish_add_path $HOME/.nimble/bin
     fish_add_path /home/linuxbrew/.linuxbrew/bin
     fish_add_path $HOME/go/bin
-    fish_add_path $HOME/.rye/shims
     fish_add_path $HOME/.deno/bin
 
     eval "$(ssh-agent -c)" > /dev/null
