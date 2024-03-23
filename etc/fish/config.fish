@@ -29,6 +29,8 @@ if status is-interactive
     abbr -a vs code .
     abbr -a vim nvim
     abbr -a dc docker compose
+    abbr -a ghce gh copilot explain
+    abbr -a ghcs gh copilot suggest
 
     # IP
     abbr -a ip ip -c
