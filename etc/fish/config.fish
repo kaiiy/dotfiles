@@ -86,6 +86,7 @@ if status is-interactive
     abbr -a gg aicommits --all
     git config --global pull.rebase true
     git config --global init.defaultBranch main
+    git config --global alias.s "status"
 
     # Python
     abbr -a python python3
