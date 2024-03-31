@@ -58,20 +58,6 @@ GIT_DST=$DEST/git
 mkdir -p $GIT_DST
 ln -sf $GIT_SRC/ignore -t $GIT_DST
 
-# inkscape
-# INKSCAPE_SRC=$SRC/inkscape
-# INKSCAPE_DEST=$DEST/inkscape
-# mkdir -p $DEST/inkscape/
-# ln -sf $INKSCAPE_SRC/preferences.xml -t $INKSCAPE_DEST
-
-# nvim 
-#NVIM_SRC=$SRC/nvim
-#NVIM_DEST=$DEST/nvim
-
-#mkdir -p $NVIM_DEST/configs/
-#ln -sf $NVIM_SRC/init.vim -t $NVIM_DEST/
-#ln_dir $NVIM_SRC/configs/ $NVIM_DEST/configs/ 
-
 # hyper
 HYPER_SRC=$SRC/hyper
 HYPER_DEST=$HOME
