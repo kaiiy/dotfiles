@@ -24,6 +24,7 @@ if status is-interactive
     abbr -a du du -sh
     abbr -a wh which
     abbr -a ns nslookup
+    abbr -a diff diff -y
 
     # Common commands
     abbr -a vs code .
