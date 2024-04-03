@@ -82,8 +82,8 @@ if status is-interactive
     abbr -a ga git add .
     abbr -a gp git pull
     abbr -a gu git push
-    abbr -a gf git dft --staged
-    abbr -a gl git log --pretty=format:'%C(auto)%h | %ai | %C(cyan)%s' -n 10
+    abbr -a gf git diff --staged
+    abbr -a gl "git log --pretty=format:'%C(auto)%h | %ai | %C(cyan)%s' -n 10"
     abbr -a gg aicommits --all
     git config --global pull.rebase true
     git config --global init.defaultBranch main
