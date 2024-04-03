@@ -83,7 +83,7 @@ if status is-interactive
     abbr -a gp git pull
     abbr -a gu git push
     abbr -a gf git dft --staged
-    abbr -a gl git log --oneline --graph --color=always
+    abbr -a gl git log --pretty=format:'%C(auto)%h | %ai | %C(cyan)%s' -n 10
     abbr -a gg aicommits --all
     git config --global pull.rebase true
     git config --global init.defaultBranch main
