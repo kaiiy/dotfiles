@@ -3,7 +3,7 @@ function mk
     set -l words apple banana carrot donut egg fish grape honey ice cream jam kiwi lemon mango nut orange peach quiche rice salad tomato udon vanilla wasabi xigua yogurt zucchini
     for i in (seq 10)  # Attempt directory creation up to 10 times.
         set -l word $words[(random 1 (count $words))]  # Select a word randomly.
-        set -l dir_name tmp.$word  # Generate the directory name.
+        set -l dir_name $word.tmp  # Generate the directory name.
 
         if not test -e $dir_name  # If a directory with the same name does not exist
             echo $dir_name
