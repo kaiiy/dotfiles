@@ -85,9 +85,16 @@ if status is-interactive
     abbr -a gf git diff --staged
     abbr -a gl "git log --pretty=format:'%C(auto)%h | %ai | %C(cyan)%s' -n 10"
     abbr -a gg aicommits --all
+
     git config --global pull.rebase true
     git config --global init.defaultBranch main
-    git config --global alias.s "status"
+    git config --global alias.s status
+
+    git config --global diff.tool difftastic
+    git config --global difftool.prompt false
+    git config --global difftool.difftastic.cmd "difft \"\$LOCAL\" \"\$REMOTE\""
+    git config --global pager.difftool true
+    git config --global alias.dft difftool
 
     # Python
     abbr -a python python3
@@ -110,7 +117,7 @@ if status is-interactive
     fish_add_path $HOME/.deno/bin
     fish_add_path $HOME/bin
 
-    eval "$(ssh-agent -c)" > /dev/null
+    eval "$(ssh-agent -c)" >/dev/null
 
     eval (zellij setup --generate-auto-start fish | string collect)
 end
