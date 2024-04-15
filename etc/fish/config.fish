@@ -113,6 +113,7 @@ if status is-interactive
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/.volta/bin
     fish_add_path /home/linuxbrew/.linuxbrew/bin
+    fish_add_path /home/linuxbrew/.linuxbrew/sbin
     fish_add_path $HOME/go/bin
     fish_add_path $HOME/.deno/bin
     fish_add_path $HOME/bin
