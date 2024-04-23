@@ -58,11 +58,6 @@ GIT_DST=$DEST/git
 mkdir -p $GIT_DST
 ln -sf $GIT_SRC/ignore -t $GIT_DST
 
-# hyper
-HYPER_SRC=$SRC/hyper
-HYPER_DEST=$HOME
-ln -sf $HYPER_SRC/hyper.js $HYPER_DEST/.hyper.js
-
 # rustscan
 HYPER_SRC=$SRC/rustscan
 HYPER_DEST=$HOME
