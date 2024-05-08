@@ -88,7 +88,7 @@ if status is-interactive
 
     git config --global pull.rebase true
     git config --global init.defaultBranch main
-    git config --global alias.s status
+    git config --global alias.st status
 
     git config --global diff.tool difftastic
     git config --global difftool.prompt false
