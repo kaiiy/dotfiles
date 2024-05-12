@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 ln_dir() {
-    find $1 -maxdepth 1 -type f -print | xargs ln -sf -t $2
+    find "$1" -maxdepth 1 -type f -print0 | xargs -0 -I{} ln -sf {} "$2"
 }
 cp_link() {
-    find $1 -maxdepth 1 -type l -print | xargs -i cp -f {} $2
+    find "$1" -maxdepth 1 -type l -print0 | xargs -0 -I{} cp -f {} "$2"
 }
 
 PWD=$(pwd)
@@ -22,12 +22,11 @@ mkdir -p $FISH_DEST/conf.d/
 mkdir -p $FISH_DEST/functions/
 mkdir -p $FISH_DEST/completions/
 
-ln -sf $FISH_SRC/config.fish -t $FISH_DEST/
+ln -sf $FISH_SRC/config.fish $FISH_DEST/config.fish
 cp -f $FISH_SRC/fish_plugins $FISH_DEST/
-ln -sf $FISH_SRC/conf.d/color_scheme.fish $FISH_DEST/conf.d/
+ln -sf $FISH_SRC/conf.d/color_scheme.fish $FISH_DEST/conf.d/color_scheme.fish
 ln_dir $FISH_SRC/functions/ $FISH_DEST/functions/
 ln_dir $FISH_SRC/completions/ $FISH_DEST/completions/
-cp_link /home/linuxbrew/.linuxbrew/share/fish/vendor_completions.d/ $FISH_DEST/completions/
 
 # task completion
 wget -O $FISH_DEST/completions/task.fish https://raw.githubusercontent.com/go-task/task/main/completion/fish/task.fish >>/dev/null 2>&1
@@ -42,23 +41,23 @@ ZELLIJ_SRC=$SRC/zellij
 ZELLIJ_DEST=$DEST/zellij
 
 mkdir -p $ZELLIJ_DEST/
-ln -sf $ZELLIJ_SRC/config.kdl -t $ZELLIJ_DEST/
+ln -sf $ZELLIJ_SRC/config.kdl $ZELLIJ_DEST/config.kdl
 
 # bat
 BAT_SRC=$SRC/bat
 BAT_DEST=$DEST/bat
 
 mkdir -p $BAT_DEST/
-ln -sf $BAT_SRC/config -t $BAT_DEST
+ln -sf $BAT_SRC/config $BAT_DEST/config
 
 # git 
 GIT_SRC=$SRC/git
 GIT_DST=$DEST/git
 
 mkdir -p $GIT_DST
-ln -sf $GIT_SRC/ignore -t $GIT_DST
+ln -sf $GIT_SRC/ignore $GIT_DST/ignore
 
 # rustscan
-HYPER_SRC=$SRC/rustscan
-HYPER_DEST=$HOME
-ln -sf $HYPER_SRC/rustscan.toml $HYPER_DEST/.rustscan.toml
+RUSTSCAN_SRC=$SRC/rustscan
+RUSTSCAN_DEST=$HOME
+ln -sf $RUSTSCAN_SRC/rustscan.toml $RUSTSCAN_DEST/.rustscan.toml
