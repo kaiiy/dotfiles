@@ -105,7 +105,10 @@ if status is-interactive
 
     # Wsl2
     alias clip="clip.exe"
-    alias open="explorer.exe"
+
+    if string match -q "*microsoft*" (uname -a)
+      alias open="explorer.exe"
+    end
 
     abbr -a mkpass "pwgen -1scnB --symbols 12 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
 
