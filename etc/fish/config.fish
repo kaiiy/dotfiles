@@ -1,6 +1,6 @@
 if status is-interactive
-    set -gx LANG C.UTF-8
-    set -gx LC_ALL C.UTF-8
+    set -gx LANG C
+    set -gx LC_TYPE en_US.UTF-8
 
     # 1 character
     abbr -a c clear
@@ -109,7 +109,7 @@ if status is-interactive
     alias clip="clip.exe"
 
     if string match -q "*microsoft*" (uname -a)
-      alias open="explorer.exe"
+        alias open="explorer.exe"
     end
 
     abbr -a mkpass "pwgen -1scnB --symbols 12 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
