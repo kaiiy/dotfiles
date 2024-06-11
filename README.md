@@ -2,8 +2,8 @@
 
 ## Requirements
 
-- Ubuntu 23.04
-- Homebrew
+- Ubuntu 23.10
+- [Homebrew](https://brew.sh)
 
 ## Installation
 
