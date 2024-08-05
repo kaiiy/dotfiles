@@ -124,6 +124,8 @@ if status is-interactive
     fish_add_path $HOME/.deno/bin
     fish_add_path $HOME/bin
 
+    source "$HOME/.cargo/env.fish"
+    
     eval "$(ssh-agent -c)" >/dev/null
 
     eval (zellij setup --generate-auto-start fish | string collect)
