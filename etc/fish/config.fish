@@ -15,6 +15,7 @@ if status is-interactive
     abbr -a w which
     abbr -a y yarn
     alias z="z-wrapper"
+    alias ghc="gh-clone"
 
     # Apt
     abbr -a ad sudo apt update
@@ -125,7 +126,7 @@ if status is-interactive
     fish_add_path $HOME/bin
 
     source "$HOME/.cargo/env.fish"
-    
+
     eval "$(ssh-agent -c)" >/dev/null
 
     eval (zellij setup --generate-auto-start fish | string collect)
