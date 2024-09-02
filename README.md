@@ -8,23 +8,23 @@
 ## Installation
 
 ```sh
-$ git clone git@github.com:kaiiy/dotfiles.git
-$ cd dotfiles/
-$ sudo apt-add-repository ppa:fish-shell/release-3 
-$ sudo apt update
-$ sudo apt install fish
-$ fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
-$ ./link.sh
-$ brew bundle --file ./etc/brew/Brewfile
-$ fish
-$ fisher update
+git clone git@github.com:kaiiy/dotfiles.git
+cd dotfiles/
+sudo apt-add-repository ppa:fish-shell/release-3 
+sudo apt update
+sudo apt install fish
+fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
+./link.sh
+brew bundle --file ./etc/brew/Brewfile
+fish
+fisher update
 ```
 
 **Options**
 
 
 ```sh
-$ curl https://get.volta.sh | bash
+curl https://get.volta.sh | bash
 ```
 
 ## Features
@@ -47,7 +47,7 @@ $ curl https://get.volta.sh | bash
 To update installed packages, run the following command:
 
 ```sh
-$ topgrade
+topgrade
 ```
 
 ### Dotfiles
@@ -55,7 +55,7 @@ $ topgrade
 To update dotfiles, run the following command:
 
 ```sh
-$ ./link.sh
+./link.sh
 ```
 
 ## Fonts
