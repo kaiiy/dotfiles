@@ -88,6 +88,7 @@ if status is-interactive
     abbr -a gf git diff --staged
     abbr -a gl "git log --pretty=format:'%C(auto)%h | %ai | %C(cyan)%s' -n 10"
     abbr -a gg aicommits --all
+    abbr -a gs git show --color --name-only
 
     git config --global pull.rebase true
     git config --global init.defaultBranch main
@@ -99,6 +100,7 @@ if status is-interactive
     git config --global difftool.difftastic.cmd "difft \"\$LOCAL\" \"\$REMOTE\""
     git config --global pager.difftool true
     git config --global alias.dft difftool
+    git config --global core.quotepath false
 
     # Python
     abbr -a python python3
