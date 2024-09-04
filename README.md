@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Ubuntu 23.10
+- Ubuntu 24.04 or macOS
 - [Homebrew](https://brew.sh)
 
 ## Installation
