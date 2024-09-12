@@ -8,7 +8,7 @@
 ## Installation
 
 ```sh
-git clone git@github.com:kaiiy/dotfiles.git
+gh repo clone kaiiy/dotfiles
 cd dotfiles/
 sudo apt-add-repository ppa:fish-shell/release-3 
 sudo apt update
