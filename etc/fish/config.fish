@@ -127,7 +127,9 @@ if status is-interactive
     fish_add_path $HOME/.deno/bin
     fish_add_path $HOME/bin
 
-    source "$HOME/.cargo/env.fish"
+    if test -e "$HOME/.cargo/env.fish"
+    	source "$HOME/.cargo/env.fish"
+    end
 
     eval "$(ssh-agent -c)" >/dev/null
 
