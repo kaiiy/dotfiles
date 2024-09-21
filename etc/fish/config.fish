@@ -127,8 +127,10 @@ if status is-interactive
     fish_add_path $HOME/.deno/bin
     fish_add_path $HOME/bin
 
+    tide configure --auto --style=Lean --prompt_colors='True color' --show_time=No --lean_prompt_height='One line' --prompt_spacing=Compact --icons='Few icons' --transient=No
+
     if test -e "$HOME/.cargo/env.fish"
-    	source "$HOME/.cargo/env.fish"
+        source "$HOME/.cargo/env.fish"
     end
 
     eval "$(ssh-agent -c)" >/dev/null
