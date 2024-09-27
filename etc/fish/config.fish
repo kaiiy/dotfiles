@@ -115,7 +115,7 @@ if status is-interactive
         alias open="explorer.exe"
     end
 
-    abbr -a mkpass "pwgen -1sB --numerals --capitalize --symbols 12 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
+    abbr -a mkpass "pwgen -1sB --numerals --capitalize --symbols 15 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
 
     # Path 
     fish_add_path $HOME/.cargo/bin
