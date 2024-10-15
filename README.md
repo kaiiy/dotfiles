@@ -20,26 +20,6 @@ fish
 fisher update
 ```
 
-**Options**
-
-
-```sh
-curl https://get.volta.sh | bash
-```
-
-## Features
-
-- bash (only used to start fish shell)
-- [fish](https://github.com/fish-shell/fish-shell)
-- [volta](https://github.com/volta-cli/volta)
-- [Neovim](https://github.com/neovim/neovim) 
-- [lftp](https://packages.ubuntu.com/jammy/lftp)
-- [Zellij](https://github.com/zellij-org/zellij)
-- [Task](https://taskfile.dev)
-- [bat](https://github.com/sharkdp/bat)
-- [topgrade](https://github.com/topgrade-rs/topgrade)
-- [Hyper](https://github.com/vercel/hyper)
-
 ## Update
 
 ### Packages
