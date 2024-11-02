@@ -28,6 +28,7 @@ if status is-interactive
     abbr -a wh which
     abbr -a ns nslookup
     abbr -a diff diff -y
+    abbr -a tc touch
 
     # Common commands
     abbr -a vs code .
