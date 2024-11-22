@@ -96,12 +96,8 @@ if status is-interactive
     git config --global alias.st status
     git config --global alias.pop "stash pop"
 
-    git config --global diff.tool difftastic
-    git config --global difftool.prompt false
-    git config --global difftool.difftastic.cmd "difft \"\$LOCAL\" \"\$REMOTE\""
-    git config --global pager.difftool true
-    git config --global alias.dft difftool
     git config --global core.quotepath false
+    git config --global core.pager "LESSCHARSET=utf-8 less"
 
     # Python
     abbr -a python python3
