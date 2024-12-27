@@ -1,6 +1,5 @@
 if status is-interactive
-    set -gx LANG C
-    set -gx LC_TYPE en_US.UTF-8
+    set -gx LANG en_US.UTF-8
 
     # 1 character
     abbr -a c clear
