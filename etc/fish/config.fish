@@ -48,6 +48,8 @@ if status is-interactive
     abbr -a untar-gz "tar --extract --gzip --verbose --file"
     abbr -a tar-xz "tar --create --xz --verbose --file=\"archive.tar.xz\""
     abbr -a untar-xz "tar --extract --xz --verbose --file"
+    abbr -a tar-zstd "tar -Izstdmt -cvf archive.tar.zst"
+    abbr -a untar-zstd "tar -Ixzstd -xvf"
 
     # History
     abbr -a hf "history | fzf"
