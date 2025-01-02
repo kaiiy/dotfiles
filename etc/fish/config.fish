@@ -78,6 +78,7 @@ if status is-interactive
     abbr -a ca bat
     abbr -a tg topgrade
     abbr -a rm trash-put
+    abbr -a mr "mohaya -r"
 
     # fzf (Tokyo Night Theme)
     set -Ux FZF_DEFAULT_OPTS "--color=fg:#c0caf5,bg:#1a1b26,hl:#bb9af7 --color=fg+:#ffffff,bg+:#1a1b26,hl+:#7dcfff --color=info:#7aa2f7,prompt:#7dcfff,pointer:#7dcfff --color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a"
