@@ -113,7 +113,7 @@ if status is-interactive
     # Wsl2
     alias clip="clip.exe"
 
-    if string match -q "*microsoft*" (uname -a)
+    if string match -q "*microsoft*" (uname -r)
         alias open="explorer.exe"
     end
 
