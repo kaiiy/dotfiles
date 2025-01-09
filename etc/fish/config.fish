@@ -106,6 +106,9 @@ if status is-interactive
     abbr -a poe poetry
     alias pip="pip3"
     alias python="python3"
+    if string match -q "*Linux*" (uname -s)
+      alias python3="/usr/bin/python3"
+    end
 
     # Wsl2
     alias clip="clip.exe"
