@@ -115,6 +115,18 @@ if status is-interactive
 
     if string match -q "*microsoft*" (uname -r)
         alias open="explorer.exe"
+
+        # WSLg (X11, Wayland)
+        if not test -S /tmp/.X11-unix/X0
+            ln -sf /mnt/wslg/.X11-unix/X0 /tmp/.X11-unix/X0
+        end
+
+        if not set -q XDG_RUNTIME_DIR
+            return
+        end
+        if not test -S "$XDG_RUNTIME_DIR/wayland-0"
+            ln -sf /mnt/wslg/runtime-dir/wayland-0* "$XDG_RUNTIME_DIR"
+        end
     end
 
     abbr -a mkpass "pwgen -1sB --numerals --capitalize --symbols 15 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
