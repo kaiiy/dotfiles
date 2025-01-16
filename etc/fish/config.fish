@@ -103,7 +103,6 @@ if status is-interactive
 
     # Python
     abbr -a python python3
-    abbr -a poe poetry
     alias pip="pip3"
     alias python="python3"
     if string match -q "*Linux*" (uname -s)
