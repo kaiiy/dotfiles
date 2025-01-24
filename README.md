@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Ubuntu 24.04 or macOS
+- Ubuntu 24.04 or macOS Sequoia
 - [Homebrew](https://brew.sh)
 
 ## Installation
