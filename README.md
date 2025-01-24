@@ -38,28 +38,3 @@ To update dotfiles, run the following command:
 ./link.sh
 ```
 
-## Fonts
-
-[JetBrainsMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads#:~:text=font%20for%20developers-,Download,-Preview%20on%20ProgrammingFonts)
-
-### VSCode 
-
-```json
-{
-    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Consolas, 'Courier New', monospace"
-}
-```
-
-### Windows Terminal
-
-```json
-{
-      "profiles": {
-        "defaults": {
-            "font": {
-                "face": "JetBrainsMono Nerd Font Mono" 
-            }
-        }
-      }
-}
-```
