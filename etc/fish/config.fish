@@ -106,7 +106,7 @@ if status is-interactive
     alias pip="pip3"
     alias python="python3"
     if string match -q "*Linux*" (uname -s)
-      alias python3="/usr/bin/python3"
+        alias python3="/usr/bin/python3"
     end
 
     # Wsl2
@@ -140,7 +140,9 @@ if status is-interactive
     fish_add_path $HOME/.deno/bin
     fish_add_path $HOME/bin
 
-    tide configure --auto --style=Lean --prompt_colors='True color' --show_time=No --lean_prompt_height='One line' --prompt_spacing=Compact --icons='Few icons' --transient=No
+    if type -q tide
+        tide configure --auto --style=Lean --prompt_colors='True color' --show_time=No --lean_prompt_height='One line' --prompt_spacing=Compact --icons='Few icons' --transient=No
+    end
 
     if test -e "$HOME/.cargo/env.fish"
         source "$HOME/.cargo/env.fish"
@@ -148,5 +150,7 @@ if status is-interactive
 
     eval "$(ssh-agent -c)" >/dev/null
 
-    eval (zellij setup --generate-auto-start fish | string collect)
+    if type -q zellij
+        eval (zellij setup --generate-auto-start fish | string collect)
+    end
 end
