@@ -35,6 +35,7 @@ if status is-interactive
     abbr -a dc docker compose
     abbr -a ghce gh copilot explain
     abbr -a ghcs gh copilot suggest
+    abbr -a cg cargo
 
     # IP
     abbr -a ip ip -c
