@@ -30,6 +30,7 @@ keybinds clear-defaults=true {
         bind "down" { GoToNextTab; }
         bind "up" { GoToPreviousTab; }
         bind "right" { GoToNextTab; }
+        bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "1" { GoToTab 1; SwitchToMode "normal"; }
         bind "2" { GoToTab 2; SwitchToMode "normal"; }
         bind "3" { GoToTab 3; SwitchToMode "normal"; }
@@ -82,6 +83,10 @@ keybinds clear-defaults=true {
         bind "Ctrl s" { SwitchToMode "normal"; }
         bind "u" { HalfPageScrollUp; }
         bind "w" { ScrollUp; }
+    }
+    renametab {
+        bind "Ctrl t" { SwitchToMode "Tab"; }
+        bind "Esc" { SwitchToMode "Tab"; }
     }
     session {
         bind "d" { Detach; }
