@@ -143,6 +143,7 @@ if status is-interactive
 
     if type -q tide
         tide configure --auto --style=Lean --prompt_colors='True color' --show_time=No --lean_prompt_height='One line' --prompt_spacing=Compact --icons='Few icons' --transient=No
+        set --universal tide_right_prompt_items status cmd_duration context jobs direnv node python rustc java php pulumi ruby go gcloud distrobox toolbox terraform aws nix_shell crystal elixir zig
     end
 
     if test -e "$HOME/.cargo/env.fish"
