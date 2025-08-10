@@ -11,9 +11,6 @@ PWD=$(pwd)
 SRC=$PWD/etc
 DEST=$HOME/.config
 
-# bash
-ln -sf $SRC/bash/bashrc $HOME/.bashrc
-
 # fish
 FISH_SRC=$SRC/fish
 FISH_DEST=$DEST/fish
