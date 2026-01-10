@@ -151,8 +151,4 @@ if status is-interactive
     end
 
     eval "$(ssh-agent -c)" >/dev/null
-
-    if type -q zellij
-        eval (zellij setup --generate-auto-start fish | string collect)
-    end
 end
