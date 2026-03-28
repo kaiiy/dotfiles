@@ -58,3 +58,9 @@ ln -sf $GIT_SRC/ignore $GIT_DST/ignore
 RUSTSCAN_SRC=$SRC/rustscan
 RUSTSCAN_DEST=$HOME
 ln -sf $RUSTSCAN_SRC/rustscan.toml $RUSTSCAN_DEST/.rustscan.toml
+
+# codex
+CODEX_SRC=$SRC/codex
+CODEX_DEST=$HOME/.codex
+mkdir -p $CODEX_DEST
+ln -sf $CODEX_SRC/config.toml $CODEX_DEST/config.toml
