@@ -1,5 +1,8 @@
 if status is-interactive
     set -gx LANG en_US.UTF-8
+    set -l os_name (uname)
+    set -l kernel_name (uname -s)
+    set -l kernel_release (uname -r)
 
     # 1 character
     abbr -a c clear
@@ -17,34 +20,34 @@ if status is-interactive
     alias ghc="gh-clone"
 
     # Apt
-    abbr -a ad sudo apt update
-    abbr -a ag sudo apt upgrade -y
+    abbr -a ad "sudo apt update"
+    abbr -a ag "sudo apt upgrade -y"
 
     # Linux commands
     abbr -a sd pushd
     abbr -a pd popd
-    abbr -a du du -sh
+    abbr -a du "du -sh"
     abbr -a wh which
     abbr -a ns nslookup
-    abbr -a diff diff -y
+    abbr -a diff "diff -y"
     abbr -a tc touch
 
     # Common commands
-    abbr -a vs code .
+    abbr -a vs "code ."
     abbr -a vim nvim
-    abbr -a dc docker compose
-    abbr -a ghce gh copilot explain
-    abbr -a ghcs gh copilot suggest
+    abbr -a dc "docker compose"
+    abbr -a ghce "gh copilot explain"
+    abbr -a ghcs "gh copilot suggest"
     abbr -a cg cargo
 
     # IP
-    abbr -a ip ip -c
-    abbr -a myip curl inet-ip.info
-    abbr -a p8 ping 8.8.8.8
+    abbr -a ip "ip -c"
+    abbr -a myip "curl inet-ip.info"
+    abbr -a p8 "ping 8.8.8.8"
 
     # Tar
     abbr -a tar "tar --create --verbose --file=\"archive.tar\""
-    abbr -a untar tar --extract --verbose --file
+    abbr -a untar "tar --extract --verbose --file"
     abbr -a tar-gz "tar --create --gzip --verbose --file=\"archive.tar.gz\""
     abbr -a untar-gz "tar --extract --gzip --verbose --file"
     abbr -a tar-xz "tar --create --xz --verbose --file=\"archive.tar.xz\""
@@ -69,16 +72,16 @@ if status is-interactive
 
     # Linuxbrew commands
     abbr -a ls eza
-    abbr -a la eza -a
-    abbr -a ll eza -l
-    abbr -a lla eza -la
-    abbr -a tree eza --tree
+    abbr -a la "eza -a"
+    abbr -a ll "eza -l"
+    abbr -a lla "eza -la"
+    abbr -a tree "eza --tree"
     # abbr -a ps procs
     # abbr -a grep rg
     abbr -a find fd
     abbr -a ca bat
     abbr -a tg topgrade
-    switch (uname)
+    switch $os_name
         case Darwin
             abbr -a rm trash
         case '*'
@@ -90,20 +93,19 @@ if status is-interactive
     set -Ux FZF_DEFAULT_OPTS "--color=fg:#c0caf5,bg:#1a1b26,hl:#bb9af7 --color=fg+:#ffffff,bg+:#1a1b26,hl+:#7dcfff --color=info:#7aa2f7,prompt:#7dcfff,pointer:#7dcfff --color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a"
 
     # Git
-    abbr -a gc git commit -m
-    abbr -a ga git add .
-    abbr -a gp git pull
-    abbr -a gu git push
-    abbr -a gf git diff --staged
+    abbr -a gc "git commit -m"
+    abbr -a ga "git add ."
+    abbr -a gp "git pull"
+    abbr -a gu "git push"
+    abbr -a gf "git diff --staged"
     abbr -a gl "git log --pretty=format:'%C(auto)%h | %ai | %C(cyan)%s' -n 10"
-    abbr -a gg aicommits --all
-    abbr -a gs git show --color --name-only
+    abbr -a gg "aicommits --all"
+    abbr -a gs "git show --color --name-only"
 
     git config --global pull.rebase true
     git config --global init.defaultBranch main
     git config --global alias.st status
     git config --global alias.pop "stash pop"
-
     git config --global core.quotepath false
     git config --global core.pager "LESSCHARSET=utf-8 less"
 
@@ -111,14 +113,13 @@ if status is-interactive
     abbr -a python python3
     alias pip="pip3"
     alias python="python3"
-    if string match -q "*Linux*" (uname -s)
+    if string match -q "*Linux*" $kernel_name
         alias python3="/usr/bin/python3"
     end
 
-    # Wsl2
+    # WSL2
     alias clip="clip.exe"
-
-    if string match -q "*microsoft*" (uname -r)
+    if string match -q "*microsoft*" $kernel_release
         alias open="explorer.exe"
 
         # WSLg (X11, Wayland)
@@ -126,25 +127,24 @@ if status is-interactive
             ln -sf /mnt/wslg/.X11-unix/X0 /tmp/.X11-unix/X0
         end
 
-        if not set -q XDG_RUNTIME_DIR
-            return
-        end
-        if not test -S "$XDG_RUNTIME_DIR/wayland-0"
-            ln -sf /mnt/wslg/runtime-dir/wayland-0* "$XDG_RUNTIME_DIR"
+        if set -q XDG_RUNTIME_DIR
+            if not test -S "$XDG_RUNTIME_DIR/wayland-0"
+                ln -sf /mnt/wslg/runtime-dir/wayland-0* "$XDG_RUNTIME_DIR"
+            end
         end
     end
 
     abbr -a mkpass "pwgen -1sB --numerals --capitalize --symbols 15 5000 | rg \"^[a-zA-Z0-9-]+\\\$\" | head -n 5"
 
-    # Path 
-    fish_add_path $HOME/.cargo/bin
-    fish_add_path $HOME/.local/bin
-    fish_add_path $HOME/.volta/bin
+    # Path
+    fish_add_path "$HOME/.cargo/bin"
+    fish_add_path "$HOME/.local/bin"
+    fish_add_path "$HOME/.volta/bin"
     fish_add_path /home/linuxbrew/.linuxbrew/bin
     fish_add_path /home/linuxbrew/.linuxbrew/sbin
-    fish_add_path $HOME/go/bin
-    fish_add_path $HOME/.deno/bin
-    fish_add_path $HOME/bin
+    fish_add_path "$HOME/go/bin"
+    fish_add_path "$HOME/.deno/bin"
+    fish_add_path "$HOME/bin"
 
     if type -q tide
         tide configure --auto --style=Lean --prompt_colors='True color' --show_time=No --lean_prompt_height='One line' --prompt_spacing=Compact --icons='Few icons' --transient=No
@@ -155,7 +155,6 @@ if status is-interactive
         source "$HOME/.cargo/env.fish"
     end
 
+    bind ctrl-c cancel-commandline
     eval "$(ssh-agent -c)" >/dev/null
-
-    fish_add_path "$HOME/.local/bin"
 end
