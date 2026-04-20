@@ -63,4 +63,4 @@ ln -sf $RUSTSCAN_SRC/rustscan.toml $RUSTSCAN_DEST/.rustscan.toml
 CODEX_SRC=$SRC/codex
 CODEX_DEST=$HOME/.codex
 mkdir -p $CODEX_DEST
-ln -sf $CODEX_SRC/config.toml $CODEX_DEST/config.toml
+cp $CODEX_SRC/config.toml $CODEX_DEST/config.toml

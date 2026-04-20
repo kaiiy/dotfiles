@@ -151,4 +151,6 @@ if status is-interactive
     end
 
     eval "$(ssh-agent -c)" >/dev/null
+
+    fish_add_path "$HOME/.local/bin"
 end
