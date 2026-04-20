@@ -78,7 +78,12 @@ if status is-interactive
     abbr -a find fd
     abbr -a ca bat
     abbr -a tg topgrade
-    abbr -a rm trash-put
+    switch (uname)
+        case Darwin
+            abbr -a rm trash
+        case '*'
+            abbr -a rm trash-put
+    end
     abbr -a mr "mohaya -r"
 
     # fzf (Tokyo Night Theme)
