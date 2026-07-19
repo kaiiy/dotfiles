@@ -32,6 +32,20 @@ if status is-interactive
     abbr -a diff "diff -y"
     abbr -a tc touch
 
+    # GNU commands
+    alias awk=gawk
+    alias grep=ggrep
+    alias sed=gsed
+    alias find=gfind
+    alias xargs=gxargs
+    alias tar=gtar
+    alias head=ghead
+    alias tail=gtail
+    alias sort=gsort
+    alias date=gdate
+    alias cut=gcut
+    alias wc=gwc
+
     # Common commands
     abbr -a vs "code ."
     abbr -a vim nvim
@@ -46,8 +60,6 @@ if status is-interactive
     abbr -a p8 "ping 8.8.8.8"
 
     # Tar
-    abbr -a tar "tar --create --verbose --file=\"archive.tar\""
-    abbr -a untar "tar --extract --verbose --file"
     abbr -a tar-gz "tar --create --gzip --verbose --file=\"archive.tar.gz\""
     abbr -a untar-gz "tar --extract --gzip --verbose --file"
     abbr -a tar-xz "tar --create --xz --verbose --file=\"archive.tar.xz\""
@@ -70,15 +82,12 @@ if status is-interactive
     set -x LESS_TERMCAP_ue (printf "\e[0m")
     set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
-    # Linuxbrew commands
+    # Alt commands
     abbr -a ls eza
     abbr -a la "eza -a"
     abbr -a ll "eza -l"
     abbr -a lla "eza -la"
     abbr -a tree "eza --tree"
-    # abbr -a ps procs
-    # abbr -a grep rg
-    abbr -a find fd
     abbr -a ca bat
     abbr -a tg topgrade
     switch $os_name
@@ -157,4 +166,6 @@ if status is-interactive
 
     bind ctrl-c cancel-commandline
     eval "$(ssh-agent -c)" >/dev/null
+    fish_vi_key_bindings
+
 end
