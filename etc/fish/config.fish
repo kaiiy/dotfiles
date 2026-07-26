@@ -49,7 +49,7 @@ if status is-interactive
     # Common commands
     abbr -a vs "code ."
     abbr -a vim nvim
-    abbr -a dc "docker compose"
+    abbr -a dc "cd"
     abbr -a ghce "gh copilot explain"
     abbr -a ghcs "gh copilot suggest"
     abbr -a cg cargo
